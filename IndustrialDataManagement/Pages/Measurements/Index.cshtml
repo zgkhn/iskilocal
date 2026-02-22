@@ -1,0 +1,52 @@
+@page
+@model IndustrialDataManagement.Pages.Measurements.IndexModel
+@{
+    ViewData["Title"] = "Canlı Veri Akışı";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Son Alınan Ölçümler (Veri Akışı)</h2>
+    <button class="btn btn-outline-primary" onclick="location.reload();">Sayfayı Yenile</button>
+</div>
+
+<div class="alert alert-secondary">
+    <i class="bi bi-info-circle"></i> En son okunan güncel 200 ölçüm verisini (Log) gösterir. Worker Service (Arka plan hizmeti) çalıştığı sürece veritabanınıza burası dolmaya devam edecektir.
+</div>
+
+<table class="table table-striped table-bordered align-middle">
+    <thead class="table-dark">
+        <tr>
+            <th>Zaman (Saat)</th>
+            <th>Tag Adı</th>
+            <th>Değer</th>
+            <th>Tablo (Grup)</th>
+            <th>PLC</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (!Model.Measurements.Any())
+        {
+            <tr>
+                <td colspan="5" class="text-center text-muted py-4">
+                    Henüz veritabanına kayıt işlemi yapılmamış. Servisleriniz ve Tag'lerinizin "Aktif" olduğundan emin olun.
+                </td>
+            </tr>
+        }
+        else
+        {
+            @foreach (var item in Model.Measurements)
+            {
+                <tr>
+                    <td>@item.Timestamp.ToLocalTime().ToString("dd MMM yyyy HH:mm:ss")</td>
+                    <td><strong>@item.TagName</strong></td>
+                    <td>
+                        <span class="fs-5 fw-bold text-success">@item.Value</span>
+                        <span class="text-muted ms-1">@item.Unit</span>
+                    </td>
+                    <td>@item.TableName</td>
+                    <td>@item.PlcName</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

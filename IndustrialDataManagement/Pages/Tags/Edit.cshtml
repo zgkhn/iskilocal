@@ -1,0 +1,58 @@
+@page
+@model IndustrialDataManagement.Pages.Tags.EditModel
+@{
+    ViewData["Title"] = "Tag Düzenle";
+}
+
+<div class="card shadow-sm mt-3">
+    <div class="card-header bg-warning text-dark">
+        <h4 class="mb-0">Tag Düzenle: @Model.Tag.Name</h4>
+    </div>
+    <div class="card-body">
+        <form method="post">
+            <input type="hidden" asp-for="Tag.Id" />
+            <input type="hidden" asp-for="Tag.MonitoringTableId" />
+            
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label">Tag Adı</label>
+                    <input asp-for="Tag.Name" class="form-control" required />
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">PLC Adresi (Register)</label>
+                    <input asp-for="Tag.PlcAddress" class="form-control" required />
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <label class="form-label">Veri Tipi</label>
+                    <select asp-for="Tag.DataType" class="form-select">
+                        <option value="float">Float (32-bit)</option>
+                        <option value="int">Integer (16/32-bit)</option>
+                        <option value="bool">Boolean (Bit)</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Ölçüm Birimi</label>
+                    <input asp-for="Tag.Unit" class="form-control" />
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Açıklama</label>
+                    <input asp-for="Tag.Description" class="form-control" />
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-md-12 d-flex align-items-center">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" asp-for="Tag.IsActive" />
+                        <label class="form-check-label">Aktif</label>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <a asp-page="./Index" asp-route-tableId="@Model.Tag.MonitoringTableId" class="btn btn-secondary">Geri Dön</a>
+                <button type="submit" class="btn btn-success">Güncelle</button>
+            </div>
+        </form>
+    </div>
+</div>

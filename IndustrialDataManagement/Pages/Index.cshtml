@@ -1,0 +1,194 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Kontrol Paneli";
+}
+
+<div class="container-fluid px-4">
+    <!-- Başlık -->
+    <div class="d-flex justify-content-between align-items-center my-4">
+        <div>
+            <h2 class="fw-bold mb-0 text-dark">
+                <i class="bi bi-speedometer2 text-primary me-2"></i>Kontrol Paneli
+            </h2>
+            <p class="text-muted mb-0 small">Tesis geneli cihaz ve sistem durumuna anlık bakış.</p>
+        </div>
+        <button class="btn btn-primary fw-bold shadow-sm" onclick="location.reload();">
+            <i class="bi bi-arrow-clockwise me-1"></i> Güncelle
+        </button>
+    </div>
+
+    <!-- Genel İstatistikler -->
+    <div class="row g-3 mb-4">
+        <div class="col-md-2">
+            <div class="card border-0 shadow-sm rounded-3 h-100">
+                <div class="card-body text-center py-4">
+                    <div class="display-6 fw-bold text-primary">@Model.Stats.ActivePlcs</div>
+                    <div class="small text-muted fw-bold text-uppercase mt-1">Aktif PLC</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card border-0 shadow-sm rounded-3 h-100">
+                <div class="card-body text-center py-4">
+                    <div class="display-6 fw-bold text-info">@Model.Stats.TotalTables</div>
+                    <div class="small text-muted fw-bold text-uppercase mt-1">İzleme Tablosu</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card border-0 shadow-sm rounded-3 h-100">
+                <div class="card-body text-center py-4">
+                    <div class="display-6 fw-bold text-success">@Model.Stats.TotalTags</div>
+                    <div class="small text-muted fw-bold text-uppercase mt-1">Toplam Tag</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm rounded-3 h-100 @(Model.Stats.ErrorsLast24h > 0 ? "border-start border-danger border-3" : "")">
+                <div class="card-body text-center py-4">
+                    <div class="display-6 fw-bold text-danger">@Model.Stats.ErrorsLast24h</div>
+                    <div class="small text-muted fw-bold text-uppercase mt-1">Hata (Son 24 Saat)</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm rounded-3 h-100 @(Model.Stats.WarningsLast24h > 0 ? "border-start border-warning border-3" : "")">
+                <div class="card-body text-center py-4">
+                    <div class="display-6 fw-bold text-warning">@Model.Stats.WarningsLast24h</div>
+                    <div class="small text-muted fw-bold text-uppercase mt-1">Uyarı (Son 24 Saat)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PLC Cihaz Kartları -->
+    <h5 class="fw-bold text-dark mb-3"><i class="bi bi-hdd-network me-2 text-primary"></i>Bağlı Cihazlar (PLC)</h5>
+    <div class="row g-3 mb-4">
+        @if (!Model.Plcs.Any())
+        {
+            <div class="col-12">
+                <div class="card border-0 shadow-sm rounded-3">
+                    <div class="card-body text-center py-5">
+                        <i class="bi bi-cpu text-muted display-1 d-block mb-3"></i>
+                        <h5 class="text-muted fw-light">Henüz bir PLC tanımlanmadı.</h5>
+                        <a asp-page="/Plcs/Index" class="btn btn-sm btn-primary mt-2">PLC Ekle</a>
+                    </div>
+                </div>
+            </div>
+        }
+        else
+        {
+            @foreach (var plc in Model.Plcs)
+            {
+                var statusColor = plc.IsActive ? "success" : "secondary";
+                var statusText = plc.IsActive ? "Aktif" : "Pasif";
+                var hasErrors = plc.RecentErrorCount > 0;
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm rounded-3 h-100 plc-card @(hasErrors ? "border-start border-danger border-3" : "")">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="bg-light rounded-circle p-2 me-3 d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                                        <i class="bi bi-cpu-fill text-primary fs-4"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold mb-0 text-dark">@plc.Name</h5>
+                                        <span class="badge rounded-pill bg-@statusColor bg-opacity-10 text-@statusColor small fw-bold mt-1">
+                                            <i class="bi bi-circle-fill me-1" style="font-size: 0.5rem;"></i> @statusText
+                                        </span>
+                                    </div>
+                                </div>
+                                @if (hasErrors)
+                                {
+                                    <span class="badge bg-danger rounded-pill px-2 py-1" title="Son 24 saat hata">
+                                        <i class="bi bi-exclamation-triangle-fill me-1"></i>@plc.RecentErrorCount
+                                    </span>
+                                }
+                            </div>
+
+                            <div class="bg-light rounded-3 p-3 mb-3">
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <div class="small text-muted text-uppercase fw-bold" style="font-size: 0.65rem;">IP Adresi</div>
+                                        <div class="fw-bold monospace text-dark">@plc.IpAddress</div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="small text-muted text-uppercase fw-bold" style="font-size: 0.65rem;">Port</div>
+                                        <div class="fw-bold monospace text-dark">@plc.Port</div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="small text-muted text-uppercase fw-bold" style="font-size: 0.65rem;">Protokol</div>
+                                        <div class="fw-bold text-dark small">@plc.Protocol</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between text-muted small">
+                                <span><i class="bi bi-table me-1"></i> <strong>@plc.TableCount</strong> tablo</span>
+                                <span><i class="bi bi-tag me-1"></i> <strong>@plc.TagCount</strong> tag</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+
+    <!-- Son Sistem Olayları -->
+    <h5 class="fw-bold text-dark mb-3"><i class="bi bi-activity me-2 text-danger"></i>Son Sistem Olayları</h5>
+    <div class="card border-0 shadow-sm rounded-3 mb-4">
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                    <tbody>
+                        @if (!Model.RecentLogs.Any())
+                        {
+                            <tr>
+                                <td class="text-center py-4 text-muted border-0">
+                                    <i class="bi bi-check-circle text-success me-2"></i> Son dönemde herhangi bir olay kaydedilmedi.
+                                </td>
+                            </tr>
+                        }
+                        else
+                        {
+                            @foreach (var log in Model.RecentLogs)
+                            {
+                                var badgeStyle = log.Level switch
+                                {
+                                    "ERROR" => "text-danger",
+                                    "WARNING" => "text-warning",
+                                    _ => "text-info"
+                                };
+                                <tr>
+                                    <td class="ps-4" style="width: 40px;">
+                                        <i class="bi bi-circle-fill @badgeStyle" style="font-size: 0.5rem;"></i>
+                                    </td>
+                                    <td class="text-muted monospace small" style="width: 150px;">
+                                        @log.CreatedAt.ToLocalTime().ToString("dd.MM HH:mm:ss")
+                                    </td>
+                                    <td class="text-dark small">@log.Message</td>
+                                    <td class="text-end pe-4 small text-muted" style="width: 120px;">
+                                        @(log.PlcName ?? "Sistem")
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="card-footer bg-white border-0 text-center py-2">
+            <a asp-page="/Logs/Index" class="btn btn-sm btn-link text-decoration-none fw-bold">
+                Tüm Logları Görüntüle <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<style>
+    .monospace { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
+    .plc-card { transition: transform 0.15s ease, box-shadow 0.15s ease; }
+    .plc-card:hover { transform: translateY(-2px); box-shadow: 0 0.5rem 1rem rgba(0,0,0,.08) !important; }
+</style>
