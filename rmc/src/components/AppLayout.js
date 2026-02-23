@@ -36,7 +36,7 @@ export default function AppLayout({ children }) {
         }
     }, [user, isAdmin]);
 
-    if (!user) return children;
+    if (!user || pathname === '/login') return children;
 
     // Build viewer menu from permitted reports
     const viewerMenuItems = [
