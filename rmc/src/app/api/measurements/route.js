@@ -73,7 +73,7 @@ export async function GET(request) {
                 `SELECT sub.* FROM (
                     SELECT DISTINCT ON (m.tag_id, ${intervalExpr})
                         m.id, m.tag_id, m.timestamp, m.value,
-                        t.name as tag_name, t.unit as tag_unit, t.data_type,
+                        t.name as tag_name, t.unit as tag_unit, t.description, t.data_type,
                         ts.multiply_factor, ts.divide_factor, ts.offset_value,
                         ts.decimal_precision, ts.decimal_separator, ts.thousand_separator, ts.max_digits, ts.unit as scale_unit
                     FROM measurements m
@@ -102,7 +102,7 @@ export async function GET(request) {
 
         const dataResult = await query(
             `SELECT m.id, m.tag_id, m.timestamp, m.value,
-              t.name as tag_name, t.unit as tag_unit, t.data_type,
+              t.name as tag_name, t.unit as tag_unit, t.description, t.data_type,
               ts.multiply_factor, ts.divide_factor, ts.offset_value, 
               ts.decimal_precision, ts.decimal_separator, ts.thousand_separator, ts.max_digits, ts.unit as scale_unit
        FROM measurements m

@@ -1,0 +1,246 @@
+{
+  "plcs": [
+    {
+      "id": 3,
+      "name": "Emirli 1 A2 Flitre",
+      "ip_address": "190.133.168.226",
+      "port": 502,
+      "protocol": "ModbusTCP",
+      "timeout_ms": 2000,
+      "retry_count": 3,
+      "is_active": true,
+      "created_at": "2026-02-24T07:21:05.767Z",
+      "manufacturer": "Generic",
+      "address_offset": 0
+    },
+    {
+      "id": 1,
+      "name": "osmaniye",
+      "ip_address": "190.133.168.140",
+      "port": 502,
+      "protocol": "ModbusTCP",
+      "timeout_ms": 2000,
+      "retry_count": 3,
+      "is_active": true,
+      "created_at": "2026-02-21T06:49:31.486Z",
+      "manufacturer": "Schneider",
+      "address_offset": 0
+    },
+    {
+      "id": 2,
+      "name": "emirli filtre masterrrr",
+      "ip_address": "190.133.168.62",
+      "port": 502,
+      "protocol": "ModbusTCP",
+      "timeout_ms": 2000,
+      "retry_count": 3,
+      "is_active": true,
+      "created_at": "2026-02-21T08:37:36.148Z",
+      "manufacturer": "Schneider",
+      "address_offset": 0
+    },
+    {
+      "id": 5,
+      "name": "Orhaniye",
+      "ip_address": "190.133.168.107",
+      "port": 502,
+      "protocol": "ModbusTCP",
+      "timeout_ms": 2000,
+      "retry_count": 3,
+      "is_active": true,
+      "created_at": "2026-02-24T11:35:08.679Z",
+      "manufacturer": "GE Fanuc",
+      "address_offset": 0
+    }
+  ],
+  "monitoring_tables": [
+    {
+      "id": 1,
+      "name": "test",
+      "plc_id": 1,
+      "polling_interval_ms": 20000,
+      "is_active": true,
+      "created_at": "2026-02-21T06:50:41.368Z"
+    },
+    {
+      "id": 6,
+      "name": "orhaniye test  tablo",
+      "plc_id": 5,
+      "polling_interval_ms": 20000,
+      "is_active": true,
+      "created_at": "2026-02-24T11:35:38.870Z"
+    },
+    {
+      "id": 4,
+      "name": "Emirli Flitre A2",
+      "plc_id": 2,
+      "polling_interval_ms": 10000,
+      "is_active": true,
+      "created_at": "2026-02-24T07:21:42.134Z"
+    },
+    {
+      "id": 7,
+      "name": "emirli 62",
+      "plc_id": 2,
+      "polling_interval_ms": 20000,
+      "is_active": true,
+      "created_at": "2026-02-25T07:58:43.720Z"
+    }
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "monitoring_table_id": 1,
+      "name": "test tag",
+      "plc_address": "41169",
+      "data_type": "int",
+      "unit": "debi",
+      "description": "filitre 3 debi",
+      "is_active": true,
+      "created_at": "2026-02-21T06:52:32.779Z"
+    },
+    {
+      "id": 2,
+      "monitoring_table_id": 1,
+      "name": "fdsfdsfdsfds",
+      "plc_address": "40470",
+      "data_type": "int",
+      "unit": "debi",
+      "description": "sadadad",
+      "is_active": true,
+      "created_at": "2026-02-21T07:14:45.717Z"
+    },
+    {
+      "id": 3,
+      "monitoring_table_id": 1,
+      "name": "test 3",
+      "plc_address": "40462",
+      "data_type": "int",
+      "unit": "asdas",
+      "description": "asdasdasd",
+      "is_active": true,
+      "created_at": "2026-02-21T07:16:36.532Z"
+    },
+    {
+      "id": 7,
+      "monitoring_table_id": 1,
+      "name": "osmaniye giris debi",
+      "plc_address": "40474",
+      "data_type": "int",
+      "unit": "m3/h",
+      "description": "osmaniye giriş debisi",
+      "is_active": true,
+      "created_at": "2026-02-21T13:18:57.778Z"
+    },
+    {
+      "id": 10,
+      "monitoring_table_id": 4,
+      "name": "A2- Filitre Yük Kaybı",
+      "plc_address": "%MW300",
+      "data_type": "int",
+      "unit": "cm",
+      "description": "A2- Filitre Yük Kaybı",
+      "is_active": true,
+      "created_at": "2026-02-24T07:25:14.500Z"
+    },
+    {
+      "id": 11,
+      "monitoring_table_id": 4,
+      "name": "deneme",
+      "plc_address": "%R104",
+      "data_type": "int",
+      "unit": "ss",
+      "description": null,
+      "is_active": true,
+      "created_at": "2026-02-24T08:53:33.671Z"
+    },
+    {
+      "id": 14,
+      "monitoring_table_id": 6,
+      "name": "%R3",
+      "plc_address": "%R3",
+      "data_type": "int",
+      "unit": "ddd",
+      "description": null,
+      "is_active": true,
+      "created_at": "2026-02-24T11:53:04.633Z"
+    },
+    {
+      "id": 15,
+      "monitoring_table_id": 6,
+      "name": "%SC010",
+      "plc_address": "%SC010",
+      "data_type": "bool",
+      "unit": "sss",
+      "description": null,
+      "is_active": true,
+      "created_at": "2026-02-24T12:01:00.248Z"
+    },
+    {
+      "id": 16,
+      "monitoring_table_id": 6,
+      "name": "%M18",
+      "plc_address": "%M18",
+      "data_type": "bool",
+      "unit": "sss",
+      "description": null,
+      "is_active": true,
+      "created_at": "2026-02-24T12:06:19.960Z"
+    },
+    {
+      "id": 17,
+      "monitoring_table_id": 6,
+      "name": "M55",
+      "plc_address": "%M55",
+      "data_type": "bool",
+      "unit": "sss",
+      "description": null,
+      "is_active": true,
+      "created_at": "2026-02-25T05:52:34.519Z"
+    },
+    {
+      "id": 13,
+      "monitoring_table_id": 6,
+      "name": "deneme tag ",
+      "plc_address": "%R95",
+      "data_type": "float",
+      "unit": "sd",
+      "description": null,
+      "is_active": true,
+      "created_at": "2026-02-24T11:36:58.050Z"
+    },
+    {
+      "id": 18,
+      "monitoring_table_id": 6,
+      "name": "R78 TEST",
+      "plc_address": "%R96",
+      "data_type": "float",
+      "unit": null,
+      "description": null,
+      "is_active": true,
+      "created_at": "2026-02-25T05:54:02.667Z"
+    },
+    {
+      "id": 20,
+      "monitoring_table_id": 6,
+      "name": "R99 TEST",
+      "plc_address": "%R99",
+      "data_type": "float",
+      "unit": null,
+      "description": null,
+      "is_active": true,
+      "created_at": "2026-02-25T07:17:46.868Z"
+    },
+    {
+      "id": 19,
+      "monitoring_table_id": 6,
+      "name": "R96 TEST",
+      "plc_address": "%R1758",
+      "data_type": "float",
+      "unit": null,
+      "description": null,
+      "is_active": true,
+      "created_at": "2026-02-25T06:32:52.197Z"
+    }
+  ]
+}

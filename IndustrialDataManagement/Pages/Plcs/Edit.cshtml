@@ -22,19 +22,34 @@
                 </div>
             </div>
             <div class="row mb-3">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <label class="form-label">Port</label>
                     <input asp-for="Plc.Port" class="form-control" type="number" required />
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <label class="form-label">Protokol</label>
                     <select asp-for="Plc.Protocol" class="form-select">
                         <option value="ModbusTCP">Modbus TCP</option>
+                        <option value="GE-SRTP">GE-SRTP</option>
                     </select>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
+                    <label class="form-label">PLC Markası</label>
+                    <select asp-for="Plc.Manufacturer" class="form-select">
+                        <option value="Generic">Generic (Standart)</option>
+                        <option value="GE Fanuc">GE Fanuc</option>
+                        <option value="Schneider">Schneider</option>
+                        <option value="Siemens">Siemens</option>
+                        <option value="Allen-Bradley">Allen-Bradley</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
                     <label class="form-label">Timeout (ms)</label>
                     <input asp-for="Plc.TimeoutMs" class="form-control" type="number" required />
+                </div>
+                <div class="col-md-1">
+                    <label class="form-label">Ofset</label>
+                    <input asp-for="Plc.AddressOffset" class="form-control" type="number" required />
                 </div>
             </div>
             <div class="row mb-4">

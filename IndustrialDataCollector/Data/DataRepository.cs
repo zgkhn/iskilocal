@@ -29,7 +29,7 @@ public class DataRepository : IDataRepository
     {
         const string sql = @"
             SELECT mt.*, 
-                   p.id, p.name, p.ip_address, p.port, p.protocol, p.timeout_ms, p.retry_count, p.is_active
+                   p.*
             FROM monitoring_tables mt
             INNER JOIN plcs p ON mt.plc_id = p.id
             WHERE mt.is_active = true AND p.is_active = true;";
@@ -140,5 +140,19 @@ public class DataRepository : IDataRepository
             INSERT INTO system_logs (level, message, exception, plc_id, created_at)
             VALUES (@Level, @Message, @Exception, @PlcId, CURRENT_TIMESTAMP);";
         await connection.ExecuteAsync(sql, log);
+    }
+
+    public async Task<bool> HasPendingReloadSignalAsync()
+    {
+        using var connection = new NpgsqlConnection(_connectionString);
+        var sql = "SELECT EXISTS(SELECT 1 FROM collector_signals WHERE signal_type = 'RELOAD' AND is_processed = false);";
+        return await connection.ExecuteScalarAsync<bool>(sql);
+    }
+
+    public async Task MarkReloadSignalsAsProcessedAsync()
+    {
+        using var connection = new NpgsqlConnection(_connectionString);
+        var sql = "UPDATE collector_signals SET is_processed = true WHERE signal_type = 'RELOAD' AND is_processed = false;";
+        await connection.ExecuteAsync(sql);
     }
 }

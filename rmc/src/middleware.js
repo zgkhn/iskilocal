@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 
 export function middleware(request) {
     const { pathname } = request.nextUrl;
+    console.log(`[Middleware] Request for: ${pathname}`);
 
     // Public paths and static assets
     const isPublicPath = ['/login', '/api/auth/login'].some(p => pathname.startsWith(p));
@@ -13,13 +14,19 @@ export function middleware(request) {
         return NextResponse.next();
     }
 
-    const token = request.cookies.get('rc_auth_token')?.value;
+    try {
+        const token = request.cookies.get('rc_auth_token')?.value;
+        console.log(`[Middleware] Token status: ${token ? 'Found' : 'Missing'}`);
 
-    if (!token) {
-        if (pathname.startsWith('/api/')) {
-            return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+        if (!token) {
+            if (pathname.startsWith('/api/')) {
+                return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+            }
+            console.log(`[Middleware] Redirecting to /login`);
+            return NextResponse.redirect(new URL('/login', request.url));
         }
-        return NextResponse.redirect(new URL('/login', request.url));
+    } catch (err) {
+        console.error('[Middleware] Error:', err);
     }
 
     return NextResponse.next();

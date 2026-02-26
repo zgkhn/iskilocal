@@ -1,0 +1,3794 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Derleyicisi",
+        "version": "4.8.0.0",
+        "fileVersion": "4.8.0-3.23524.11 (f43cd10b)",
+        "semanticVersion": "4.8.0",
+        "language": "tr-TR"
+      },
+      "results": [
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages__ViewStart_cshtml.g.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 67,
+                  "endLine": 29,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages__ViewImports_cshtml.g.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 67,
+                  "endLine": 29,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_Logout_cshtml.g.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 67,
+                  "endLine": 29,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_Login_cshtml.g.cs",
+                "region": {
+                  "startLine": 86,
+                  "startColumn": 232,
+                  "endLine": 86,
+                  "endColumn": 234
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_Login_cshtml.g.cs",
+                "region": {
+                  "startLine": 101,
+                  "startColumn": 233,
+                  "endLine": 101,
+                  "endColumn": 235
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_Login_cshtml.g.cs",
+                "region": {
+                  "startLine": 238,
+                  "startColumn": 238,
+                  "endLine": 238,
+                  "endColumn": 240
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_Login_cshtml.g.cs",
+                "region": {
+                  "startLine": 276,
+                  "startColumn": 238,
+                  "endLine": 276,
+                  "endColumn": 240
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Measurements_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 244,
+                  "endLine": 75,
+                  "endColumn": 246
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Measurements_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 129,
+                  "startColumn": 236,
+                  "endLine": 129,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 233,
+                  "endLine": 92,
+                  "endColumn": 235
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 233,
+                  "endLine": 107,
+                  "endColumn": 235
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 122,
+                  "startColumn": 233,
+                  "endLine": 122,
+                  "endColumn": 235
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 148,
+                  "startColumn": 233,
+                  "endLine": 148,
+                  "endColumn": 235
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 188,
+                  "startColumn": 236,
+                  "endLine": 188,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 215,
+                  "startColumn": 236,
+                  "endLine": 215,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 234,
+                  "startColumn": 236,
+                  "endLine": 234,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 253,
+                  "startColumn": 236,
+                  "endLine": 253,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 272,
+                  "startColumn": 236,
+                  "endLine": 272,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 291,
+                  "startColumn": 236,
+                  "endLine": 291,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 310,
+                  "startColumn": 236,
+                  "endLine": 310,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 352,
+                  "startColumn": 236,
+                  "endLine": 352,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 369,
+                  "startColumn": 236,
+                  "endLine": 369,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 402,
+                  "startColumn": 236,
+                  "endLine": 402,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 420,
+                  "startColumn": 241,
+                  "endLine": 420,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 434,
+                  "startColumn": 241,
+                  "endLine": 434,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 448,
+                  "startColumn": 241,
+                  "endLine": 448,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Plcs_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 231,
+                  "endLine": 67,
+                  "endColumn": 233
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Plcs_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 199,
+                  "startColumn": 232,
+                  "endLine": 199,
+                  "endColumn": 234
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Plcs_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 231,
+                  "startColumn": 232,
+                  "endLine": 231,
+                  "endColumn": 234
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Plcs_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 287,
+                  "startColumn": 46,
+                  "endLine": 287,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Plcs_Delete_cshtml.g.cs",
+                "region": {
+                  "startLine": 105,
+                  "startColumn": 233,
+                  "endLine": 105,
+                  "endColumn": 235
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Plcs_Delete_cshtml.g.cs",
+                "region": {
+                  "startLine": 130,
+                  "startColumn": 235,
+                  "endLine": 130,
+                  "endColumn": 237
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__ValidationScriptsPartial_cshtml.g.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 67,
+                  "endLine": 29,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Privacy_cshtml.g.cs",
+                "region": {
+                  "startLine": 119,
+                  "startColumn": 231,
+                  "endLine": 119,
+                  "endColumn": 233
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tables_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 231,
+                  "endLine": 69,
+                  "endColumn": 233
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tables_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 173,
+                  "startColumn": 232,
+                  "endLine": 173,
+                  "endColumn": 234
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tables_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 205,
+                  "startColumn": 232,
+                  "endLine": 205,
+                  "endColumn": 234
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tables_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 237,
+                  "startColumn": 232,
+                  "endLine": 237,
+                  "endColumn": 234
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Error_cshtml.g.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 67,
+                  "endLine": 29,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 231,
+                  "endLine": 79,
+                  "endColumn": 233
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 128,
+                  "startColumn": 231,
+                  "endLine": 128,
+                  "endColumn": 233
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 261,
+                  "startColumn": 232,
+                  "endLine": 261,
+                  "endColumn": 234
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 293,
+                  "startColumn": 232,
+                  "endLine": 293,
+                  "endColumn": 234
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 362,
+                  "startColumn": 46,
+                  "endLine": 362,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tables_Delete_cshtml.g.cs",
+                "region": {
+                  "startLine": 97,
+                  "startColumn": 233,
+                  "endLine": 97,
+                  "endColumn": 235
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tables_Delete_cshtml.g.cs",
+                "region": {
+                  "startLine": 122,
+                  "startColumn": 235,
+                  "endLine": 122,
+                  "endColumn": 237
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Delete_cshtml.g.cs",
+                "region": {
+                  "startLine": 105,
+                  "startColumn": 233,
+                  "endLine": 105,
+                  "endColumn": 235
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Delete_cshtml.g.cs",
+                "region": {
+                  "startLine": 130,
+                  "startColumn": 235,
+                  "endLine": 130,
+                  "endColumn": 237
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Plcs_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 83,
+                  "startColumn": 233,
+                  "endLine": 83,
+                  "endColumn": 235
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Plcs_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 109,
+                  "startColumn": 234,
+                  "endLine": 109,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Plcs_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 135,
+                  "startColumn": 234,
+                  "endLine": 135,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Plcs_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 166,
+                  "startColumn": 245,
+                  "endLine": 166,
+                  "endColumn": 247
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Plcs_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 182,
+                  "startColumn": 245,
+                  "endLine": 182,
+                  "endColumn": 247
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Plcs_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 219,
+                  "startColumn": 234,
+                  "endLine": 219,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Plcs_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 248,
+                  "startColumn": 234,
+                  "endLine": 248,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Plcs_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 277,
+                  "startColumn": 234,
+                  "endLine": 277,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Plcs_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 304,
+                  "startColumn": 236,
+                  "endLine": 304,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 234,
+                  "endLine": 81,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 224,
+                  "startColumn": 232,
+                  "endLine": 224,
+                  "endColumn": 234
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 530,
+                  "startColumn": 232,
+                  "endLine": 530,
+                  "endColumn": 234
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_ChangePassword_cshtml.g.cs",
+                "region": {
+                  "startLine": 134,
+                  "startColumn": 233,
+                  "endLine": 134,
+                  "endColumn": 235
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_ChangePassword_cshtml.g.cs",
+                "region": {
+                  "startLine": 166,
+                  "startColumn": 234,
+                  "endLine": 166,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_ChangePassword_cshtml.g.cs",
+                "region": {
+                  "startLine": 193,
+                  "startColumn": 234,
+                  "endLine": 193,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_ChangePassword_cshtml.g.cs",
+                "region": {
+                  "startLine": 227,
+                  "startColumn": 236,
+                  "endLine": 227,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tables_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 233,
+                  "endLine": 80,
+                  "endColumn": 235
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tables_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 103,
+                  "startColumn": 233,
+                  "endLine": 103,
+                  "endColumn": 235
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tables_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 131,
+                  "startColumn": 245,
+                  "endLine": 131,
+                  "endColumn": 247
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tables_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 179,
+                  "startColumn": 234,
+                  "endLine": 179,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tables_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 211,
+                  "startColumn": 234,
+                  "endLine": 211,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tables_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 235,
+                  "startColumn": 236,
+                  "endLine": 235,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tables_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 233,
+                  "endLine": 79,
+                  "endColumn": 235
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tables_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 245,
+                  "endLine": 107,
+                  "endColumn": 247
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tables_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 155,
+                  "startColumn": 234,
+                  "endLine": 155,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tables_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 189,
+                  "startColumn": 234,
+                  "endLine": 189,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tables_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 216,
+                  "startColumn": 236,
+                  "endLine": 216,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 234,
+                  "endLine": 87,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 120,
+                  "startColumn": 234,
+                  "endLine": 120,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 146,
+                  "startColumn": 234,
+                  "endLine": 146,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 181,
+                  "startColumn": 245,
+                  "endLine": 181,
+                  "endColumn": 247
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 197,
+                  "startColumn": 245,
+                  "endLine": 197,
+                  "endColumn": 247
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 213,
+                  "startColumn": 245,
+                  "endLine": 213,
+                  "endColumn": 247
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 229,
+                  "startColumn": 245,
+                  "endLine": 229,
+                  "endColumn": 247
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 245,
+                  "startColumn": 245,
+                  "endLine": 245,
+                  "endColumn": 247
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 261,
+                  "startColumn": 245,
+                  "endLine": 261,
+                  "endColumn": 247
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 299,
+                  "startColumn": 234,
+                  "endLine": 299,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 322,
+                  "startColumn": 234,
+                  "endLine": 322,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 345,
+                  "startColumn": 234,
+                  "endLine": 345,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 388,
+                  "startColumn": 236,
+                  "endLine": 388,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 436,
+                  "startColumn": 46,
+                  "endLine": 436,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS0128",
+          "level": "error",
+          "message": "'trimAddr' adlı yerel bir değişken veya işlev bu kapsamda zaten tanımlanmış",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Gokhan/Desktop/%C4%B0ski/IndustrialDataManagement/Pages/Tags/Index.cshtml.cs",
+                "region": {
+                  "startLine": 83,
+                  "startColumn": 16,
+                  "endLine": 83,
+                  "endColumn": 24
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 91,
+                  "startColumn": 233,
+                  "endLine": 91,
+                  "endColumn": 235
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 114,
+                  "startColumn": 234,
+                  "endLine": 114,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 147,
+                  "startColumn": 234,
+                  "endLine": 147,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 172,
+                  "startColumn": 234,
+                  "endLine": 172,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 199,
+                  "startColumn": 245,
+                  "endLine": 199,
+                  "endColumn": 247
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 215,
+                  "startColumn": 245,
+                  "endLine": 215,
+                  "endColumn": 247
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 231,
+                  "startColumn": 245,
+                  "endLine": 231,
+                  "endColumn": 247
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 247,
+                  "startColumn": 245,
+                  "endLine": 247,
+                  "endColumn": 247
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 263,
+                  "startColumn": 245,
+                  "endLine": 263,
+                  "endColumn": 247
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 279,
+                  "startColumn": 245,
+                  "endLine": 279,
+                  "endColumn": 247
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 317,
+                  "startColumn": 234,
+                  "endLine": 317,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 339,
+                  "startColumn": 234,
+                  "endLine": 339,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 361,
+                  "startColumn": 234,
+                  "endLine": 361,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 401,
+                  "startColumn": 236,
+                  "endLine": 401,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tags_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 449,
+                  "startColumn": 46,
+                  "endLine": 449,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Plcs_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 82,
+                  "startColumn": 233,
+                  "endLine": 82,
+                  "endColumn": 235
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Plcs_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 105,
+                  "startColumn": 234,
+                  "endLine": 105,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Plcs_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 131,
+                  "startColumn": 234,
+                  "endLine": 131,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Plcs_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 157,
+                  "startColumn": 234,
+                  "endLine": 157,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Plcs_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 186,
+                  "startColumn": 245,
+                  "endLine": 186,
+                  "endColumn": 247
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Plcs_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 202,
+                  "startColumn": 245,
+                  "endLine": 202,
+                  "endColumn": 247
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Plcs_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 239,
+                  "startColumn": 234,
+                  "endLine": 239,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Plcs_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 266,
+                  "startColumn": 234,
+                  "endLine": 266,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Plcs_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 293,
+                  "startColumn": 234,
+                  "endLine": 293,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Plcs_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 317,
+                  "startColumn": 236,
+                  "endLine": 317,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Logs_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 231,
+                  "endLine": 92,
+                  "endColumn": 233
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Logs_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 173,
+                  "startColumn": 245,
+                  "endLine": 173,
+                  "endColumn": 247
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Logs_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 189,
+                  "startColumn": 245,
+                  "endLine": 189,
+                  "endColumn": 247
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Logs_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 205,
+                  "startColumn": 245,
+                  "endLine": 205,
+                  "endColumn": 247
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Logs_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 221,
+                  "startColumn": 245,
+                  "endLine": 221,
+                  "endColumn": 247
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Logs_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 260,
+                  "startColumn": 245,
+                  "endLine": 260,
+                  "endColumn": 247
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Logs_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 305,
+                  "startColumn": 234,
+                  "endLine": 305,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Logs_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 329,
+                  "startColumn": 234,
+                  "endLine": 329,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Logs_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 652,
+                  "startColumn": 232,
+                  "endLine": 652,
+                  "endColumn": 234
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Logs_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 698,
+                  "startColumn": 232,
+                  "endLine": 698,
+                  "endColumn": 234
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Logs_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 757,
+                  "startColumn": 232,
+                  "endLine": 757,
+                  "endColumn": 234
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Logs_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 802,
+                  "startColumn": 235,
+                  "endLine": 802,
+                  "endColumn": 237
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "'Pages_Tables_Delete.__tagHelperStringValueBuffer' alanı hiçbir zaman kullanılmaz",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Tables_Delete_cshtml.g.cs",
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 24,
+                  "endLine": 39,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "'Pages_Measurements_Index.__tagHelperStringValueBuffer' alanı hiçbir zaman kullanılmaz",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Measurements_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 24,
+                  "endLine": 40,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "'Pages_Index.__tagHelperStringValueBuffer' alanı hiçbir zaman kullanılmaz",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 24,
+                  "endLine": 41,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "'Pages_Shared__Layout.__tagHelperStringValueBuffer' alanı hiçbir zaman kullanılmaz",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 24,
+                  "endLine": 58,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "'Pages_Plcs_Delete.__tagHelperStringValueBuffer' alanı hiçbir zaman kullanılmaz",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Plcs_Delete_cshtml.g.cs",
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 24,
+                  "endLine": 39,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "'Pages_Logs_Index.__tagHelperStringValueBuffer' alanı hiçbir zaman kullanılmaz",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Logs_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 24,
+                  "endLine": 50,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "'Pages_Privacy.__tagHelperStringValueBuffer' alanı hiçbir zaman kullanılmaz",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Privacy_cshtml.g.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 24,
+                  "endLine": 36,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "MVC1001",
+          "level": "warning",
+          "message": "'IgnoreAntiforgeryTokenAttribute' cannot be applied to Razor Page handler methods. It may be applied either to the Razor Page model or applied globally.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Gokhan/Desktop/%C4%B0ski/IndustrialDataManagement/Pages/Plcs/Index.cshtml.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 6,
+                  "endLine": 26,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "MVC1001",
+          "level": "warning",
+          "message": "'IgnoreAntiforgeryTokenAttribute' cannot be applied to Razor Page handler methods. It may be applied either to the Razor Page model or applied globally.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Gokhan/Desktop/%C4%B0ski/IndustrialDataManagement/Pages/Tags/Create.cshtml.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 6,
+                  "endLine": 37,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "MVC1001",
+          "level": "warning",
+          "message": "'IgnoreAntiforgeryTokenAttribute' cannot be applied to Razor Page handler methods. It may be applied either to the Razor Page model or applied globally.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Gokhan/Desktop/%C4%B0ski/IndustrialDataManagement/Pages/Tags/Index.cshtml.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 6,
+                  "endLine": 31,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "MVC1001",
+          "level": "warning",
+          "message": "'IgnoreAntiforgeryTokenAttribute' cannot be applied to Razor Page handler methods. It may be applied either to the Razor Page model or applied globally.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Gokhan/Desktop/%C4%B0ski/IndustrialDataManagement/Pages/Tags/Index.cshtml.cs",
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 6,
+                  "endLine": 54,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1866",
+          "level": "note",
+          "message": "Tek karakterli bir dizeniz varsa 'string.StartsWith(char)' instead of 'string.StartsWith(string)' parametresini kullanın",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Gokhan/Desktop/%C4%B0ski/IndustrialDataManagement/Pages/Tags/Index.cshtml.cs",
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 32,
+                  "endLine": 84,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1866",
+          "level": "note",
+          "message": "Tek karakterli bir dizeniz varsa 'string.StartsWith(char)' instead of 'string.StartsWith(string)' parametresini kullanın",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Gokhan/Desktop/%C4%B0ski/IndustrialDataManagement/Pages/Tags/Index.cshtml.cs",
+                "region": {
+                  "startLine": 89,
+                  "startColumn": 32,
+                  "endLine": 89,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1866",
+          "level": "note",
+          "message": "Tek karakterli bir dizeniz varsa 'string.StartsWith(char)' instead of 'string.StartsWith(string)' parametresini kullanın",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Gokhan/Desktop/%C4%B0ski/IndustrialDataManagement/Pages/Tags/Index.cshtml.cs",
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 40,
+                  "endLine": 94,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1866",
+          "level": "note",
+          "message": "Tek karakterli bir dizeniz varsa 'string.StartsWith(char)' instead of 'string.StartsWith(string)' parametresini kullanın",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Gokhan/Desktop/%C4%B0ski/IndustrialDataManagement/Pages/Tags/Index.cshtml.cs",
+                "region": {
+                  "startLine": 117,
+                  "startColumn": 37,
+                  "endLine": 117,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1866",
+          "level": "note",
+          "message": "Tek karakterli bir dizeniz varsa 'string.StartsWith(char)' instead of 'string.StartsWith(string)' parametresini kullanın",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Gokhan/Desktop/%C4%B0ski/IndustrialDataManagement/Pages/Tags/Index.cshtml.cs",
+                "region": {
+                  "startLine": 117,
+                  "startColumn": 65,
+                  "endLine": 117,
+                  "endColumn": 70
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1866",
+          "level": "note",
+          "message": "Tek karakterli bir dizeniz varsa 'string.StartsWith(char)' instead of 'string.StartsWith(string)' parametresini kullanın",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Gokhan/Desktop/%C4%B0ski/IndustrialDataManagement/Pages/Tags/Index.cshtml.cs",
+                "region": {
+                  "startLine": 118,
+                  "startColumn": 37,
+                  "endLine": 118,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1866",
+          "level": "note",
+          "message": "Tek karakterli bir dizeniz varsa 'string.StartsWith(char)' instead of 'string.StartsWith(string)' parametresini kullanın",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Gokhan/Desktop/%C4%B0ski/IndustrialDataManagement/Pages/Tags/Index.cshtml.cs",
+                "region": {
+                  "startLine": 118,
+                  "startColumn": 65,
+                  "endLine": 118,
+                  "endColumn": 70
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1866",
+          "level": "note",
+          "message": "Tek karakterli bir dizeniz varsa 'string.StartsWith(char)' instead of 'string.StartsWith(string)' parametresini kullanın",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Gokhan/Desktop/%C4%B0ski/IndustrialDataManagement/Pages/Tags/Index.cshtml.cs",
+                "region": {
+                  "startLine": 118,
+                  "startColumn": 93,
+                  "endLine": 118,
+                  "endColumn": 98
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1866",
+          "level": "note",
+          "message": "Tek karakterli bir dizeniz varsa 'string.StartsWith(char)' instead of 'string.StartsWith(string)' parametresini kullanın",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Gokhan/Desktop/%C4%B0ski/IndustrialDataManagement/Pages/Tags/Index.cshtml.cs",
+                "region": {
+                  "startLine": 123,
+                  "startColumn": 40,
+                  "endLine": 123,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1866",
+          "level": "note",
+          "message": "Tek karakterli bir dizeniz varsa 'string.StartsWith(char)' instead of 'string.StartsWith(string)' parametresini kullanın",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Gokhan/Desktop/%C4%B0ski/IndustrialDataManagement/Pages/Tags/Index.cshtml.cs",
+                "region": {
+                  "startLine": 125,
+                  "startColumn": 45,
+                  "endLine": 125,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1866",
+          "level": "note",
+          "message": "Tek karakterli bir dizeniz varsa 'string.StartsWith(char)' instead of 'string.StartsWith(string)' parametresini kullanın",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Gokhan/Desktop/%C4%B0ski/IndustrialDataManagement/Pages/Tags/Index.cshtml.cs",
+                "region": {
+                  "startLine": 127,
+                  "startColumn": 45,
+                  "endLine": 127,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1866",
+          "level": "note",
+          "message": "Tek karakterli bir dizeniz varsa 'string.StartsWith(char)' instead of 'string.StartsWith(string)' parametresini kullanın",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Gokhan/Desktop/%C4%B0ski/IndustrialDataManagement/Pages/Tags/Index.cshtml.cs",
+                "region": {
+                  "startLine": 135,
+                  "startColumn": 37,
+                  "endLine": 135,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1866",
+          "level": "note",
+          "message": "Tek karakterli bir dizeniz varsa 'string.StartsWith(char)' instead of 'string.StartsWith(string)' parametresini kullanın",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Gokhan/Desktop/%C4%B0ski/IndustrialDataManagement/Pages/Tags/Index.cshtml.cs",
+                "region": {
+                  "startLine": 135,
+                  "startColumn": 65,
+                  "endLine": 135,
+                  "endColumn": 70
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1866",
+          "level": "note",
+          "message": "Tek karakterli bir dizeniz varsa 'string.StartsWith(char)' instead of 'string.StartsWith(string)' parametresini kullanın",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Gokhan/Desktop/%C4%B0ski/IndustrialDataManagement/Pages/Tags/Index.cshtml.cs",
+                "region": {
+                  "startLine": 144,
+                  "startColumn": 45,
+                  "endLine": 144,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1866",
+          "level": "note",
+          "message": "Tek karakterli bir dizeniz varsa 'string.StartsWith(char)' instead of 'string.StartsWith(string)' parametresini kullanın",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Gokhan/Desktop/%C4%B0ski/IndustrialDataManagement/Pages/Tags/Index.cshtml.cs",
+                "region": {
+                  "startLine": 153,
+                  "startColumn": 37,
+                  "endLine": 153,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1866",
+          "level": "note",
+          "message": "Tek karakterli bir dizeniz varsa 'string.StartsWith(char)' instead of 'string.StartsWith(string)' parametresini kullanın",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Gokhan/Desktop/%C4%B0ski/IndustrialDataManagement/Pages/Tags/Index.cshtml.cs",
+                "region": {
+                  "startLine": 158,
+                  "startColumn": 37,
+                  "endLine": 158,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1866",
+          "level": "note",
+          "message": "Tek karakterli bir dizeniz varsa 'string.StartsWith(char)' instead of 'string.StartsWith(string)' parametresini kullanın",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Gokhan/Desktop/%C4%B0ski/IndustrialDataManagement/Pages/Tags/Index.cshtml.cs",
+                "region": {
+                  "startLine": 163,
+                  "startColumn": 37,
+                  "endLine": 163,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1866",
+          "level": "note",
+          "message": "Tek karakterli bir dizeniz varsa 'string.StartsWith(char)' instead of 'string.StartsWith(string)' parametresini kullanın",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Gokhan/Desktop/%C4%B0ski/IndustrialDataManagement/Pages/Tags/Index.cshtml.cs",
+                "region": {
+                  "startLine": 168,
+                  "startColumn": 37,
+                  "endLine": 168,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "'ReadModbusValueInternalAsync' adlı üye örnek verilerine erişmiyor ve statik olarak işaretlenebilir",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Gokhan/Desktop/%C4%B0ski/IndustrialDataManagement/Pages/Tags/Index.cshtml.cs",
+                "region": {
+                  "startLine": 74,
+                  "startColumn": 32,
+                  "endLine": 74,
+                  "endColumn": 60
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CA1822": {
+          "id": "CA1822",
+          "shortDescription": "Üyeleri statik olarak işaretleyin",
+          "fullDescription": "Örnek verilerine erişmeyen veya örnek yöntemlerini çağırmayan üyeler statik olarak işaretlenebilir. Yöntemleri statik olarak işaretledikten sonra, derleyici bu üyelere yönelik sanal olmayan çağrı konumlarını gösterir. Bu, performans açısından duyarlı kod için önemli ölçüde performans kazanımı sağlar.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1822",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CA1866": {
+          "id": "CA1866",
+          "shortDescription": "Karakter aşırı yüklemesini kullanın",
+          "fullDescription": "Karakter aşırı yüklemesi, tek karakterli bir dizeden daha iyi performans gösteren bir aşırı yüklemedir.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1866",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CS0128": {
+          "id": "CS0128",
+          "defaultLevel": "error",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS0128)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry",
+              "NotConfigurable"
+            ]
+          }
+        },
+        "CS0169": {
+          "id": "CS0169",
+          "shortDescription": "Alan hiç kullanılmadı",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS0169)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS1998": {
+          "id": "CS1998",
+          "shortDescription": "Zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS1998)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "MVC1001": {
+          "id": "MVC1001",
+          "shortDescription": "Filters cannot be applied to page handler methods",
+          "defaultLevel": "warning",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true
+          }
+        }
+      }
+    }
+  ]
+}

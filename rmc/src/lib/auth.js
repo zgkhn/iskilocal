@@ -55,6 +55,7 @@ export function setAuthCookie(token) {
         secure: process.env.NODE_ENV === 'production',
         sameSite: 'lax',
         path: '/',
+        maxAge: 24 * 60 * 60, // 24 hours
     };
 }
 
@@ -67,6 +68,7 @@ export function clearAuthCookie() {
         sameSite: 'lax',
         path: '/',
         maxAge: 0,
+        expires: new Date(0), // Ensure immediate expiration
     };
 }
 

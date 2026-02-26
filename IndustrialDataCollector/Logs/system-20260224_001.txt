@@ -1,0 +1,463 @@
+2026-02-24 15:02:15.161 +03:00 [INF] [] Starting Windows Service Host
+2026-02-24 15:02:15.259 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Industrial Data Collector Service is starting.
+2026-02-24 15:02:15.260 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Ensuring database partitions exist...
+2026-02-24 15:02:15.386 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Loading configurations from database...
+2026-02-24 15:02:15.419 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Found 2 active tables. Initializing scheduler tasks...
+2026-02-24 15:02:15.446 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Started Scheduler for Table test (PLC: osmaniye) with Polling 20000ms
+2026-02-24 15:02:15.452 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Started Scheduler for Table Emirli Flitre A2 (PLC: Emirli 1 A2 Flitre) with Polling 10000ms
+2026-02-24 15:02:15.453 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Connected to Modbus PLC: osmaniye (190.133.168.140:502)
+2026-02-24 15:02:15.453 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] All scheduler tasks are initialized. Watching for signals or stop.
+2026-02-24 15:02:15.461 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Connected to Modbus PLC: Emirli 1 A2 Flitre (190.133.168.226:502)
+2026-02-24 15:02:15.500 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 47ms
+2026-02-24 15:02:15.561 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 113ms
+2026-02-24 15:02:25.503 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 33ms
+2026-02-24 15:02:35.510 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 33ms
+2026-02-24 15:02:35.535 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 74ms
+2026-02-24 15:02:45.514 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 33ms
+2026-02-24 15:02:55.522 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 26ms
+2026-02-24 15:02:55.542 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 78ms
+2026-02-24 15:03:05.546 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 35ms
+2026-02-24 15:03:15.538 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 17ms
+2026-02-24 15:03:15.552 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 76ms
+2026-02-24 15:03:25.547 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 21ms
+2026-02-24 15:03:35.550 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 70ms
+2026-02-24 15:03:35.596 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 54ms
+2026-02-24 15:03:45.582 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 27ms
+2026-02-24 15:03:55.570 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 74ms
+2026-02-24 15:03:55.578 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 21ms
+2026-02-24 15:04:05.588 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 27ms
+2026-02-24 15:04:15.580 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 78ms
+2026-02-24 15:04:15.589 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 25ms
+2026-02-24 15:04:25.604 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 22ms
+2026-02-24 15:04:35.578 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 74ms
+2026-02-24 15:04:35.618 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 22ms
+2026-02-24 15:04:45.628 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 27ms
+2026-02-24 15:04:55.594 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 76ms
+2026-02-24 15:04:55.632 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 21ms
+2026-02-24 15:05:05.653 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 35ms
+2026-02-24 15:05:15.609 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 89ms
+2026-02-24 15:05:15.653 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 23ms
+2026-02-24 15:05:25.666 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 29ms
+2026-02-24 15:05:35.604 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 82ms
+2026-02-24 15:05:35.671 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 27ms
+2026-02-24 15:05:45.676 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 30ms
+2026-02-24 15:05:55.611 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 84ms
+2026-02-24 15:05:55.670 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 19ms
+2026-02-24 15:06:05.689 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 29ms
+2026-02-24 15:06:15.630 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 89ms
+2026-02-24 15:06:15.702 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 36ms
+2026-02-24 15:06:25.702 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 33ms
+2026-02-24 15:06:35.618 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 76ms
+2026-02-24 15:06:35.706 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 25ms
+2026-02-24 15:06:45.711 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 19ms
+2026-02-24 15:06:55.628 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 85ms
+2026-02-24 15:06:55.721 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 23ms
+2026-02-24 15:07:05.738 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 31ms
+2026-02-24 15:07:15.651 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 100ms
+2026-02-24 15:07:15.742 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 20ms
+2026-02-24 15:07:25.772 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 47ms
+2026-02-24 15:07:35.648 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 85ms
+2026-02-24 15:07:35.854 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 117ms
+2026-02-24 15:07:45.767 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 27ms
+2026-02-24 15:07:55.652 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 79ms
+2026-02-24 15:07:55.763 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 19ms
+2026-02-24 15:08:05.782 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 25ms
+2026-02-24 15:08:15.666 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 87ms
+2026-02-24 15:08:15.793 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 26ms
+2026-02-24 15:08:25.804 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 22ms
+2026-02-24 15:08:35.670 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 80ms
+2026-02-24 15:08:35.814 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 22ms
+2026-02-24 15:08:45.830 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 29ms
+2026-02-24 15:08:55.661 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 72ms
+2026-02-24 15:08:55.826 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 19ms
+2026-02-24 15:09:05.841 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 24ms
+2026-02-24 15:09:15.682 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 78ms
+2026-02-24 15:09:15.845 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 22ms
+2026-02-24 15:09:25.862 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 33ms
+2026-02-24 15:09:35.683 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 76ms
+2026-02-24 15:09:35.897 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 56ms
+2026-02-24 15:09:45.878 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 28ms
+2026-02-24 15:09:55.703 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 91ms
+2026-02-24 15:09:55.886 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 26ms
+2026-02-24 15:10:05.896 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 29ms
+2026-02-24 15:10:15.703 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 76ms
+2026-02-24 15:10:15.897 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 23ms
+2026-02-24 15:10:25.912 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 25ms
+2026-02-24 15:10:35.726 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 88ms
+2026-02-24 15:10:35.926 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 25ms
+2026-02-24 15:10:45.941 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 26ms
+2026-02-24 15:10:55.729 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 88ms
+2026-02-24 15:10:55.942 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 25ms
+2026-02-24 15:11:05.953 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 31ms
+2026-02-24 15:11:15.752 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 95ms
+2026-02-24 15:11:15.952 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 30ms
+2026-02-24 15:11:25.963 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 30ms
+2026-02-24 15:11:35.740 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 67ms
+2026-02-24 15:11:35.956 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 19ms
+2026-02-24 15:11:45.963 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 23ms
+2026-02-24 15:11:55.756 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 70ms
+2026-02-24 15:11:55.976 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 26ms
+2026-02-24 15:12:52.444 +03:00 [INF] [] Starting Windows Service Host
+2026-02-24 15:12:52.541 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Industrial Data Collector Service is starting.
+2026-02-24 15:12:52.543 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Ensuring database partitions exist...
+2026-02-24 15:12:52.672 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Loading configurations from database...
+2026-02-24 15:12:52.706 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Found 3 active tables. Initializing scheduler tasks...
+2026-02-24 15:12:52.733 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Started Scheduler for Table test (PLC: osmaniye) with Polling 20000ms
+2026-02-24 15:12:52.740 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Started Scheduler for Table Emirli Flitre A2 (PLC: Emirli 1 A2 Flitre) with Polling 10000ms
+2026-02-24 15:12:52.740 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Connected to Modbus PLC: osmaniye (190.133.168.140:502)
+2026-02-24 15:12:52.742 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Started Scheduler for Table orhaniye test  tablo (PLC: Orhaniye) with Polling 20000ms
+2026-02-24 15:12:52.743 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Connected to Modbus PLC: Emirli 1 A2 Flitre (190.133.168.226:502)
+2026-02-24 15:12:52.743 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] All scheduler tasks are initialized. Watching for signals or stop.
+2026-02-24 15:12:52.744 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Connected to Modbus PLC: Orhaniye (190.133.168.107:502)
+2026-02-24 15:12:52.786 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 43ms
+2026-02-24 15:12:52.788 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 47ms
+2026-02-24 15:12:52.820 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 85ms
+2026-02-24 15:13:02.780 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 35ms
+2026-02-24 15:13:12.776 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 24ms
+2026-02-24 15:13:12.782 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 30ms
+2026-02-24 15:13:12.803 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 66ms
+2026-02-24 15:13:22.789 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 35ms
+2026-02-24 15:13:32.795 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 31ms
+2026-02-24 15:13:32.796 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 32ms
+2026-02-24 15:13:32.819 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 70ms
+2026-02-24 15:13:42.798 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 26ms
+2026-02-24 15:13:52.790 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 22ms
+2026-02-24 15:13:52.809 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 25ms
+2026-02-24 15:13:52.824 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 71ms
+2026-02-24 15:14:02.828 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 37ms
+2026-02-24 15:14:12.788 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 13ms
+2026-02-24 15:14:12.822 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 64ms
+2026-02-24 15:14:12.828 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 21ms
+2026-02-24 15:14:22.840 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 19ms
+2026-02-24 15:14:32.798 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 23ms
+2026-02-24 15:14:32.830 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 70ms
+2026-02-24 15:14:32.861 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 36ms
+2026-02-24 15:14:42.869 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 42ms
+2026-02-24 15:14:52.807 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 26ms
+2026-02-24 15:14:52.847 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 73ms
+2026-02-24 15:14:52.870 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 43ms
+2026-02-24 15:15:02.858 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 23ms
+2026-02-24 15:15:12.810 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 13ms
+2026-02-24 15:15:12.844 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 62ms
+2026-02-24 15:15:12.882 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 36ms
+2026-02-24 15:15:22.887 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 31ms
+2026-02-24 15:15:32.839 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 30ms
+2026-02-24 15:15:32.858 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 64ms
+2026-02-24 15:15:32.881 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 21ms
+2026-02-24 15:15:42.888 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 24ms
+2026-02-24 15:15:52.847 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 26ms
+2026-02-24 15:15:52.872 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 67ms
+2026-02-24 15:15:52.893 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 25ms
+2026-02-24 15:16:02.909 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 29ms
+2026-02-24 15:16:12.853 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 28ms
+2026-02-24 15:16:12.874 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 65ms
+2026-02-24 15:16:12.912 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 23ms
+2026-02-24 15:16:22.939 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 36ms
+2026-02-24 15:16:32.855 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 18ms
+2026-02-24 15:16:32.900 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 78ms
+2026-02-24 15:16:32.942 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 26ms
+2026-02-24 15:16:42.988 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 58ms
+2026-02-24 15:16:52.859 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 17ms
+2026-02-24 15:16:52.889 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 63ms
+2026-02-24 15:16:52.955 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 19ms
+2026-02-24 15:17:02.969 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 23ms
+2026-02-24 15:17:12.861 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 17ms
+2026-02-24 15:17:12.901 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 72ms
+2026-02-24 15:17:12.973 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 20ms
+2026-02-24 15:17:22.976 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 20ms
+2026-02-24 15:17:32.868 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 21ms
+2026-02-24 15:17:32.905 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 73ms
+2026-02-24 15:17:32.973 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 16ms
+2026-02-24 15:17:43.010 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 52ms
+2026-02-24 15:17:52.864 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 15ms
+2026-02-24 15:17:52.935 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 101ms
+2026-02-24 15:17:53.041 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 68ms
+2026-02-24 15:18:02.994 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 19ms
+2026-02-24 15:18:12.878 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 27ms
+2026-02-24 15:18:12.914 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 79ms
+2026-02-24 15:18:13.034 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 46ms
+2026-02-24 15:18:23.029 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 29ms
+2026-02-24 15:18:32.913 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 47ms
+2026-02-24 15:18:32.914 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 79ms
+2026-02-24 15:18:33.032 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 28ms
+2026-02-24 15:18:43.035 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 17ms
+2026-02-24 15:18:52.890 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 24ms
+2026-02-24 15:18:52.903 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 67ms
+2026-02-24 15:18:53.046 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 25ms
+2026-02-24 15:19:03.061 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 29ms
+2026-02-24 15:19:12.894 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 17ms
+2026-02-24 15:19:12.919 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 73ms
+2026-02-24 15:19:13.066 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 20ms
+2026-02-24 15:19:23.082 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 25ms
+2026-02-24 15:19:32.913 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 22ms
+2026-02-24 15:19:32.929 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 68ms
+2026-02-24 15:19:33.094 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 31ms
+2026-02-24 15:19:43.097 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 26ms
+2026-02-24 15:19:52.913 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 9ms
+2026-02-24 15:19:52.944 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 72ms
+2026-02-24 15:19:53.096 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 21ms
+2026-02-24 15:20:03.108 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 20ms
+2026-02-24 15:20:12.006 +03:00 [INF] [] Starting Windows Service Host
+2026-02-24 15:20:12.104 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Industrial Data Collector Service is starting.
+2026-02-24 15:20:12.106 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Ensuring database partitions exist...
+2026-02-24 15:20:12.238 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Loading configurations from database...
+2026-02-24 15:20:12.271 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Found 3 active tables. Initializing scheduler tasks...
+2026-02-24 15:20:12.297 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Started Scheduler for Table test (PLC: osmaniye) with Polling 20000ms
+2026-02-24 15:20:12.302 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Started Scheduler for Table Emirli Flitre A2 (PLC: Emirli 1 A2 Flitre) with Polling 10000ms
+2026-02-24 15:20:12.303 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Connected to Modbus PLC: osmaniye (190.133.168.140:502)
+2026-02-24 15:20:12.305 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Started Scheduler for Table orhaniye test  tablo (PLC: Orhaniye) with Polling 20000ms
+2026-02-24 15:20:12.306 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] All scheduler tasks are initialized. Watching for signals or stop.
+2026-02-24 15:20:12.306 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Connected to Modbus PLC: Orhaniye (190.133.168.107:502)
+2026-02-24 15:20:12.312 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Connected to Modbus PLC: Emirli 1 A2 Flitre (190.133.168.226:502)
+2026-02-24 15:20:12.342 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 36ms
+2026-02-24 15:20:12.368 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 64ms
+2026-02-24 15:20:12.404 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 106ms
+2026-02-24 15:20:22.363 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 51ms
+2026-02-24 15:20:32.323 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 15ms
+2026-02-24 15:20:32.347 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 24ms
+2026-02-24 15:20:32.369 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 61ms
+2026-02-24 15:20:42.389 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 57ms
+2026-02-24 15:20:52.328 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 15ms
+2026-02-24 15:20:52.369 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 25ms
+2026-02-24 15:20:52.378 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 66ms
+2026-02-24 15:21:02.378 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 30ms
+2026-02-24 15:21:12.344 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 20ms
+2026-02-24 15:21:12.378 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 22ms
+2026-02-24 15:21:12.400 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 76ms
+2026-02-24 15:21:22.404 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 40ms
+2026-02-24 15:21:32.343 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 12ms
+2026-02-24 15:21:32.400 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 69ms
+2026-02-24 15:21:32.417 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 38ms
+2026-02-24 15:21:42.416 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 28ms
+2026-02-24 15:21:52.358 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 22ms
+2026-02-24 15:21:52.407 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 72ms
+2026-02-24 15:21:52.419 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 22ms
+2026-02-24 15:22:02.432 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 22ms
+2026-02-24 15:22:12.357 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 22ms
+2026-02-24 15:22:12.407 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 71ms
+2026-02-24 15:22:12.441 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 26ms
+2026-02-24 15:22:22.447 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 26ms
+2026-02-24 15:22:32.369 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 20ms
+2026-02-24 15:22:32.425 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 75ms
+2026-02-24 15:22:32.449 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 23ms
+2026-02-24 15:22:42.458 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 29ms
+2026-02-24 15:22:52.361 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 10ms
+2026-02-24 15:22:52.419 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 68ms
+2026-02-24 15:22:52.477 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 32ms
+2026-02-24 15:23:02.488 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 30ms
+2026-02-24 15:23:12.382 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 27ms
+2026-02-24 15:23:12.430 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 75ms
+2026-02-24 15:23:12.491 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 25ms
+2026-02-24 15:23:22.500 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 33ms
+2026-02-24 15:23:32.382 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 18ms
+2026-02-24 15:23:32.440 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 76ms
+2026-02-24 15:23:32.493 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 20ms
+2026-02-24 15:23:42.495 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 21ms
+2026-02-24 15:23:52.393 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 26ms
+2026-02-24 15:23:52.431 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 64ms
+2026-02-24 15:23:52.564 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 87ms
+2026-02-24 15:24:02.521 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 30ms
+2026-02-24 15:24:12.404 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 1 tags successfully in 27ms
+2026-02-24 15:24:12.444 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 67ms
+2026-02-24 15:24:12.525 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 23ms
+2026-02-24 15:24:29.522 +03:00 [INF] [] Starting Windows Service Host
+2026-02-24 15:24:29.616 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Industrial Data Collector Service is starting.
+2026-02-24 15:24:29.618 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Ensuring database partitions exist...
+2026-02-24 15:24:29.743 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Loading configurations from database...
+2026-02-24 15:24:29.776 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Found 3 active tables. Initializing scheduler tasks...
+2026-02-24 15:24:29.800 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Started Scheduler for Table test (PLC: osmaniye) with Polling 20000ms
+2026-02-24 15:24:29.806 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Started Scheduler for Table Emirli Flitre A2 (PLC: Emirli 1 A2 Flitre) with Polling 10000ms
+2026-02-24 15:24:29.807 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Connected to Modbus PLC: osmaniye (190.133.168.140:502)
+2026-02-24 15:24:29.808 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Started Scheduler for Table orhaniye test  tablo (PLC: Orhaniye) with Polling 20000ms
+2026-02-24 15:24:29.809 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] All scheduler tasks are initialized. Watching for signals or stop.
+2026-02-24 15:24:29.810 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Connected to Modbus PLC: Orhaniye (190.133.168.107:502)
+2026-02-24 15:24:29.817 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Connected to Modbus PLC: Emirli 1 A2 Flitre (190.133.168.226:502)
+2026-02-24 15:24:29.862 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 54ms
+2026-02-24 15:24:29.870 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 2 tags successfully in 60ms
+2026-02-24 15:24:29.912 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 110ms
+2026-02-24 15:24:39.869 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 47ms
+2026-02-24 15:24:49.861 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 30ms
+2026-02-24 15:24:49.865 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 2 tags successfully in 49ms
+2026-02-24 15:24:49.901 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 85ms
+2026-02-24 15:24:59.872 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 35ms
+2026-02-24 15:25:09.861 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 2 tags successfully in 44ms
+2026-02-24 15:25:09.872 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 25ms
+2026-02-24 15:25:09.887 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 70ms
+2026-02-24 15:25:19.897 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 39ms
+2026-02-24 15:25:29.859 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 2 tags successfully in 42ms
+2026-02-24 15:25:29.885 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 68ms
+2026-02-24 15:25:29.886 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 25ms
+2026-02-24 15:25:39.899 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 28ms
+2026-02-24 15:25:49.877 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 2 tags successfully in 47ms
+2026-02-24 15:25:49.894 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 18ms
+2026-02-24 15:25:49.901 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 71ms
+2026-02-24 15:25:59.904 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 21ms
+2026-02-24 15:26:09.883 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 2 tags successfully in 44ms
+2026-02-24 15:26:09.906 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 22ms
+2026-02-24 15:26:09.907 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 68ms
+2026-02-24 15:26:19.923 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 25ms
+2026-02-24 15:26:29.897 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 2 tags successfully in 53ms
+2026-02-24 15:26:29.929 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 85ms
+2026-02-24 15:26:29.935 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 22ms
+2026-02-24 15:26:39.942 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 26ms
+2026-02-24 15:26:49.876 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 2 tags successfully in 31ms
+2026-02-24 15:26:49.913 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 68ms
+2026-02-24 15:26:49.978 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 55ms
+2026-02-24 15:26:59.945 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 19ms
+2026-02-24 15:27:09.898 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 2 tags successfully in 42ms
+2026-02-24 15:27:09.930 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 73ms
+2026-02-24 15:27:09.955 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 24ms
+2026-02-24 15:27:19.978 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 37ms
+2026-02-24 15:27:29.912 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 2 tags successfully in 42ms
+2026-02-24 15:27:29.945 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 75ms
+2026-02-24 15:27:29.979 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 32ms
+2026-02-24 15:27:39.974 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 27ms
+2026-02-24 15:27:49.914 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 2 tags successfully in 38ms
+2026-02-24 15:27:49.949 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 72ms
+2026-02-24 15:27:49.978 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 24ms
+2026-02-24 15:27:59.993 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 30ms
+2026-02-24 15:28:09.921 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 2 tags successfully in 43ms
+2026-02-24 15:28:09.961 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 84ms
+2026-02-24 15:28:09.987 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 24ms
+2026-02-24 15:28:20.006 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 31ms
+2026-02-24 15:28:29.933 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 2 tags successfully in 46ms
+2026-02-24 15:28:29.960 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 72ms
+2026-02-24 15:28:30.007 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 27ms
+2026-02-24 15:28:40.015 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 26ms
+2026-02-24 15:28:49.934 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 2 tags successfully in 45ms
+2026-02-24 15:28:50.007 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 118ms
+2026-02-24 15:28:50.017 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 19ms
+2026-02-24 15:29:00.027 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 24ms
+2026-02-24 15:29:09.933 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 2 tags successfully in 38ms
+2026-02-24 15:29:09.965 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 69ms
+2026-02-24 15:29:10.029 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 26ms
+2026-02-24 15:29:20.048 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 34ms
+2026-02-24 15:29:29.937 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 2 tags successfully in 35ms
+2026-02-24 15:29:29.982 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 80ms
+2026-02-24 15:29:30.048 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 22ms
+2026-02-24 15:29:40.068 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 30ms
+2026-02-24 15:29:49.961 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 2 tags successfully in 50ms
+2026-02-24 15:29:49.978 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 66ms
+2026-02-24 15:29:50.069 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 21ms
+2026-02-24 15:30:00.084 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 26ms
+2026-02-24 15:30:09.959 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 2 tags successfully in 33ms
+2026-02-24 15:30:10.000 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 75ms
+2026-02-24 15:30:10.101 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 34ms
+2026-02-24 15:30:20.096 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 27ms
+2026-02-24 15:30:29.972 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 2 tags successfully in 39ms
+2026-02-24 15:30:30.001 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 69ms
+2026-02-24 15:30:30.092 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 19ms
+2026-02-24 15:30:40.129 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 45ms
+2026-02-24 15:30:49.988 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 2 tags successfully in 46ms
+2026-02-24 15:30:50.022 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 80ms
+2026-02-24 15:30:50.121 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 24ms
+2026-02-24 15:31:00.138 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 27ms
+2026-02-24 15:31:09.980 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 2 tags successfully in 28ms
+2026-02-24 15:31:10.019 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 67ms
+2026-02-24 15:31:10.140 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 19ms
+2026-02-24 15:31:20.169 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 32ms
+2026-02-24 15:31:29.999 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 2 tags successfully in 45ms
+2026-02-24 15:31:30.038 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 84ms
+2026-02-24 15:31:30.162 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 23ms
+2026-02-24 15:31:40.178 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 25ms
+2026-02-24 15:31:51.764 +03:00 [INF] [] Starting Windows Service Host
+2026-02-24 15:31:51.865 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Industrial Data Collector Service is starting.
+2026-02-24 15:31:51.867 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Ensuring database partitions exist...
+2026-02-24 15:31:52.008 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Loading configurations from database...
+2026-02-24 15:31:52.046 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Found 3 active tables. Initializing scheduler tasks...
+2026-02-24 15:31:52.075 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Started Scheduler for Table test (PLC: osmaniye) with Polling 20000ms
+2026-02-24 15:31:52.081 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Started Scheduler for Table Emirli Flitre A2 (PLC: Emirli 1 A2 Flitre) with Polling 10000ms
+2026-02-24 15:31:52.082 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Connected to Modbus PLC: osmaniye (190.133.168.140:502)
+2026-02-24 15:31:52.084 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Started Scheduler for Table orhaniye test  tablo (PLC: Orhaniye) with Polling 20000ms
+2026-02-24 15:31:52.086 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Connected to Modbus PLC: Emirli 1 A2 Flitre (190.133.168.226:502)
+2026-02-24 15:31:52.086 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] All scheduler tasks are initialized. Watching for signals or stop.
+2026-02-24 15:31:52.087 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Connected to Modbus PLC: Orhaniye (190.133.168.107:502)
+2026-02-24 15:31:52.130 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 47ms
+2026-02-24 15:31:52.148 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 3 tags successfully in 61ms
+2026-02-24 15:31:52.178 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 101ms
+2026-02-24 15:32:02.116 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 30ms
+2026-02-24 15:32:12.113 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 27ms
+2026-02-24 15:32:12.145 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 3 tags successfully in 59ms
+2026-02-24 15:32:12.159 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 73ms
+2026-02-24 15:32:22.130 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 32ms
+2026-02-24 15:32:32.139 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 32ms
+2026-02-24 15:32:32.154 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 3 tags successfully in 63ms
+2026-02-24 15:32:32.172 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 81ms
+2026-02-24 15:32:42.131 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 24ms
+2026-02-24 15:32:52.149 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 28ms
+2026-02-24 15:32:52.173 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 3 tags successfully in 67ms
+2026-02-24 15:32:52.191 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 85ms
+2026-02-24 15:33:02.160 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 28ms
+2026-02-24 15:33:12.166 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 3 tags successfully in 58ms
+2026-02-24 15:33:12.167 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 27ms
+2026-02-24 15:33:12.187 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 79ms
+2026-02-24 15:33:22.168 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 23ms
+2026-02-24 15:33:32.166 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 19ms
+2026-02-24 15:33:32.190 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 3 tags successfully in 75ms
+2026-02-24 15:33:32.192 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 76ms
+2026-02-24 15:33:42.185 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 33ms
+2026-02-24 15:33:52.198 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 3 tags successfully in 69ms
+2026-02-24 15:33:52.199 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 39ms
+2026-02-24 15:33:52.207 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 79ms
+2026-02-24 15:34:02.203 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 28ms
+2026-02-24 15:34:12.203 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 3 tags successfully in 59ms
+2026-02-24 15:34:12.204 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 75ms
+2026-02-24 15:34:12.213 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 23ms
+2026-02-24 15:34:22.260 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 60ms
+2026-02-24 15:34:32.208 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 76ms
+2026-02-24 15:34:32.221 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 3 tags successfully in 73ms
+2026-02-24 15:34:32.267 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 57ms
+2026-02-24 15:34:42.245 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 35ms
+2026-02-24 15:34:52.221 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 3 tags successfully in 61ms
+2026-02-24 15:34:52.227 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 84ms
+2026-02-24 15:34:52.245 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 26ms
+2026-02-24 15:35:02.255 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 19ms
+2026-02-24 15:35:12.219 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 3 tags successfully in 56ms
+2026-02-24 15:35:12.219 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 72ms
+2026-02-24 15:35:12.266 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 24ms
+2026-02-24 15:35:22.292 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 36ms
+2026-02-24 15:35:32.214 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 67ms
+2026-02-24 15:35:32.245 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 3 tags successfully in 66ms
+2026-02-24 15:35:32.275 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 19ms
+2026-02-24 15:35:42.292 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 23ms
+2026-02-24 15:35:53.232 +03:00 [INF] [] Starting Windows Service Host
+2026-02-24 15:35:53.330 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Industrial Data Collector Service is starting.
+2026-02-24 15:35:53.332 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Ensuring database partitions exist...
+2026-02-24 15:35:53.462 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Loading configurations from database...
+2026-02-24 15:35:53.497 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Found 3 active tables. Initializing scheduler tasks...
+2026-02-24 15:35:53.523 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Started Scheduler for Table test (PLC: osmaniye) with Polling 20000ms
+2026-02-24 15:35:53.529 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Started Scheduler for Table Emirli Flitre A2 (PLC: Emirli 1 A2 Flitre) with Polling 10000ms
+2026-02-24 15:35:53.530 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Connected to Modbus PLC: osmaniye (190.133.168.140:502)
+2026-02-24 15:35:53.531 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Started Scheduler for Table orhaniye test  tablo (PLC: Orhaniye) with Polling 20000ms
+2026-02-24 15:35:53.531 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-24 15:35:53.532 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] All scheduler tasks are initialized. Watching for signals or stop.
+2026-02-24 15:35:53.533 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Connected to Modbus PLC: Orhaniye (190.133.168.107:502)
+2026-02-24 15:35:53.535 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-24 15:35:53.547 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-24 15:35:53.560 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Connected to Modbus PLC: Emirli 1 A2 Flitre (190.133.168.226:502)
+2026-02-24 15:35:53.561 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-24 15:35:53.564 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-24 15:35:53.565 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 12681, Region DiscreteInputs, Type bool
+2026-02-24 15:35:53.572 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-24 15:35:53.582 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-24 15:35:53.586 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 18, Region Coils, Type bool
+2026-02-24 15:35:53.598 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 67ms
+2026-02-24 15:35:53.603 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-24 15:35:53.615 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 83ms
+2026-02-24 15:35:53.624 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 100ms
+2026-02-24 15:36:03.544 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-24 15:36:03.553 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-24 15:36:03.573 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 28ms
+2026-02-24 15:36:13.525 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-24 15:36:13.538 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-24 15:36:13.541 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-24 15:36:13.552 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-24 15:36:13.557 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-24 15:36:13.562 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-24 15:36:13.562 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-24 15:36:13.572 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 12681, Region DiscreteInputs, Type bool
+2026-02-24 15:36:13.581 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 24ms
+2026-02-24 15:36:13.581 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-24 15:36:13.593 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 18, Region Coils, Type bool
+2026-02-24 15:36:13.605 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 80ms
+2026-02-24 15:36:13.617 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 75ms

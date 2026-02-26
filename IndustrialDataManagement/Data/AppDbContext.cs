@@ -31,6 +31,13 @@ public class AppDbContext
                 is_active BOOLEAN DEFAULT TRUE,
                 created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
             );
+
+            CREATE TABLE IF NOT EXISTS collector_signals (
+                id SERIAL PRIMARY KEY,
+                signal_type VARCHAR(50) NOT NULL,
+                is_processed BOOLEAN DEFAULT FALSE,
+                created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+            );
             
             INSERT INTO users (username, password_hash, fullname) 
             VALUES ('admin', '123456', 'İSKİ Ömerli Otomasyon Amiri')
@@ -60,24 +67,27 @@ public class AppDbContext
     public async Task InsertPlcAsync(Plc plc)
     {
         using var connection = CreateConnection();
-        var sql = @"INSERT INTO plcs (name, ip_address, port, protocol, timeout_ms, retry_count, is_active) 
-                    VALUES (@Name, @IpAddress, @Port, @Protocol, @TimeoutMs, @RetryCount, @IsActive)";
+        var sql = @"INSERT INTO plcs (name, ip_address, port, protocol, timeout_ms, retry_count, is_active, manufacturer, address_offset) 
+                    VALUES (@Name, @IpAddress, @Port, @Protocol, @TimeoutMs, @RetryCount, @IsActive, @Manufacturer, @AddressOffset)";
         await connection.ExecuteAsync(sql, plc);
+        await SetPendingChangesAsync();
     }
 
     public async Task UpdatePlcAsync(Plc plc)
     {
         using var connection = CreateConnection();
         var sql = @"UPDATE plcs SET name=@Name, ip_address=@IpAddress, port=@Port, 
-                    protocol=@Protocol, timeout_ms=@TimeoutMs, retry_count=@RetryCount, is_active=@IsActive 
+                    protocol=@Protocol, timeout_ms=@TimeoutMs, retry_count=@RetryCount, is_active=@IsActive, manufacturer=@Manufacturer, address_offset=@AddressOffset 
                     WHERE id=@Id";
         await connection.ExecuteAsync(sql, plc);
+        await SetPendingChangesAsync();
     }
     
     public async Task DeletePlcAsync(int id)
     {
         using var connection = CreateConnection();
         await connection.ExecuteAsync("DELETE FROM plcs WHERE id = @Id", new { Id = id });
+        await SetPendingChangesAsync();
     }
 
     // --- Monitoring Table İşlemleri ---
@@ -102,6 +112,7 @@ public class AppDbContext
         var sql = @"INSERT INTO monitoring_tables (name, plc_id, polling_interval_ms, is_active) 
                     VALUES (@Name, @PlcId, @PollingIntervalMs, @IsActive)";
         await connection.ExecuteAsync(sql, table);
+        await SetPendingChangesAsync();
     }
 
     public async Task UpdateTableAsync(MonitoringTable table)
@@ -111,12 +122,14 @@ public class AppDbContext
                     polling_interval_ms=@PollingIntervalMs, is_active=@IsActive 
                     WHERE id=@Id";
         await connection.ExecuteAsync(sql, table);
+        await SetPendingChangesAsync();
     }
 
     public async Task DeleteTableAsync(int id)
     {
         using var connection = CreateConnection();
         await connection.ExecuteAsync("DELETE FROM monitoring_tables WHERE id = @Id", new { Id = id });
+        await SetPendingChangesAsync();
     }
 
     // --- Tag İşlemleri ---
@@ -139,6 +152,7 @@ public class AppDbContext
         var sql = @"INSERT INTO tags (monitoring_table_id, name, plc_address, data_type, unit, description, is_active) 
                     VALUES (@MonitoringTableId, @Name, @PlcAddress, @DataType, @Unit, @Description, @IsActive)";
         await connection.ExecuteAsync(sql, tag);
+        await SetPendingChangesAsync();
     }
     
     public async Task UpdateTagAsync(Tag tag)
@@ -148,16 +162,18 @@ public class AppDbContext
                     data_type=@DataType, unit=@Unit, description=@Description, is_active=@IsActive 
                     WHERE id=@Id";
         await connection.ExecuteAsync(sql, tag);
+        await SetPendingChangesAsync();
     }
 
     public async Task DeleteTagAsync(int id)
     {
         using var connection = CreateConnection();
         await connection.ExecuteAsync("DELETE FROM tags WHERE id = @Id", new { Id = id });
+        await SetPendingChangesAsync();
     }
 
     // --- Ölçüm (Measurement) İşlemleri ---
-    public async Task<IEnumerable<MeasurementDto>> GetRecentMeasurementsAsync(int count = 100)
+    public async Task<IEnumerable<MeasurementDto>> GetRecentMeasurementsAsync(int count = 100, int? tagId = null)
     {
         using var connection = CreateConnection();
         var sql = @"
@@ -172,10 +188,19 @@ public class AppDbContext
             INNER JOIN tags t ON m.tag_id = t.id
             INNER JOIN monitoring_tables mt ON t.monitoring_table_id = mt.id
             INNER JOIN plcs p ON mt.plc_id = p.id
-            ORDER BY m.timestamp DESC
-            LIMIT @Count";
+            WHERE 1=1";
         
-        return await connection.QueryAsync<MeasurementDto>(sql, new { Count = count });
+        var parameters = new DynamicParameters();
+        if (tagId.HasValue)
+        {
+            sql += " AND m.tag_id = @TagId";
+            parameters.Add("TagId", tagId.Value);
+        }
+
+        sql += " ORDER BY m.timestamp DESC LIMIT @Count";
+        parameters.Add("Count", count);
+        
+        return await connection.QueryAsync<MeasurementDto>(sql, parameters);
     }
 
     // --- Dashboard İşlemleri ---
@@ -294,6 +319,18 @@ public class AppDbContext
         return await connection.ExecuteScalarAsync<int>(sql, parameters);
     }
 
+    public async Task ClearAllLogsAsync()
+    {
+        using var connection = CreateConnection();
+        await connection.ExecuteAsync("TRUNCATE TABLE system_logs");
+    }
+
+    public async Task<IEnumerable<Tag>> GetAllTagsAsync()
+    {
+        using var connection = CreateConnection();
+        return await connection.QueryAsync<Tag>("SELECT * FROM tags ORDER BY name");
+    }
+
     // --- Kullanıcı İşlemleri ---
     public async Task<User?> GetUserByUsernameAsync(string username)
     {
@@ -324,5 +361,37 @@ public class AppDbContext
             "UPDATE users SET password_hash = @Password WHERE id = @Id",
             new { Password = newPassword, Id = userId });
         return rows > 0;
+    }
+
+    // --- Collector Signaling ---
+    public async Task<bool> HasPendingChangesAsync()
+    {
+        using var connection = CreateConnection();
+        return await connection.ExecuteScalarAsync<bool>(
+            "SELECT EXISTS(SELECT 1 FROM collector_signals WHERE signal_type = 'PENDING' AND is_processed = false)");
+    }
+
+    public async Task SetPendingChangesAsync()
+    {
+        using var connection = CreateConnection();
+        // Sadece bir tane PENDING olması yeterli
+        var exists = await HasPendingChangesAsync();
+        if (!exists)
+        {
+            await connection.ExecuteAsync(
+                "INSERT INTO collector_signals (signal_type) VALUES ('PENDING')");
+        }
+    }
+
+    public async Task RequestCollectorReloadAsync()
+    {
+        using var connection = CreateConnection();
+        // RELOAD sinyali gönder
+        await connection.ExecuteAsync(
+            "INSERT INTO collector_signals (signal_type) VALUES ('RELOAD')");
+        
+        // Tüm PENDING sinyallerini işlemiş say
+        await connection.ExecuteAsync(
+            "UPDATE collector_signals SET is_processed = true WHERE signal_type = 'PENDING'");
     }
 }

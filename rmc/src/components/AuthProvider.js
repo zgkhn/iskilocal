@@ -36,7 +36,7 @@ export function AuthProvider({ children }) {
         const data = await res.json();
         if (res.ok) {
             setUser(data.user);
-            router.push('/dashboard');
+            window.location.href = '/dashboard';
             return { success: true };
         }
         return { success: false, error: data.error };
@@ -45,8 +45,8 @@ export function AuthProvider({ children }) {
     const logout = useCallback(async () => {
         await fetch('/api/auth/logout', { method: 'POST' });
         setUser(null);
-        router.push('/login');
-    }, [router]);
+        window.location.href = '/login';
+    }, []);
 
     // Idle Timeout Logic (30 minutes)
     useEffect(() => {

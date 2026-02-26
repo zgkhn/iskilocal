@@ -12,5 +12,7 @@ public class Plc
     public int TimeoutMs { get; set; } = 2000;
     public int RetryCount { get; set; } = 3;
     public bool IsActive { get; set; } = true;
+    public string Manufacturer { get; set; } = "Generic";
+    public int AddressOffset { get; set; } = 0;
     public DateTime CreatedAt { get; set; }
 }

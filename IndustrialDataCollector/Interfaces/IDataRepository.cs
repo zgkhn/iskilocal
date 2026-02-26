@@ -12,4 +12,6 @@ public interface IDataRepository
     Task InsertMeasurementsBatchAsync(IEnumerable<Measurement> measurements, CancellationToken cancellationToken = default);
     Task EnsurePartitionsExistAsync();
     Task InsertSystemLogAsync(SystemLog log);
+    Task<bool> HasPendingReloadSignalAsync();
+    Task MarkReloadSignalsAsProcessedAsync();
 }

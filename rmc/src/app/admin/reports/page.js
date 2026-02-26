@@ -10,8 +10,12 @@ export default function AdminReportsPage() {
     const [plcs, setPlcs] = useState([]);
     const [tables, setTables] = useState([]);
     const [tags, setTags] = useState([]);
+    const [selectedTagsFull, setSelectedTagsFull] = useState([]);
     const [showModal, setShowModal] = useState(false);
-    const [form, setForm] = useState({ name: '', description: '', plc_id: '', monitoring_table_id: '', tag_ids: [] });
+    const [form, setForm] = useState({ name: '', description: '', tag_ids: [] });
+    // Filters for exploring and adding tags
+    const [filterPlc, setFilterPlc] = useState('');
+    const [filterTable, setFilterTable] = useState('');
     const [editId, setEditId] = useState(null);
     const [loading, setLoading] = useState(true);
 
@@ -43,7 +47,8 @@ export default function AdminReportsPage() {
 
     const handleSave = async () => {
         const method = editId ? 'PUT' : 'POST';
-        const body = { ...form, plc_id: parseInt(form.plc_id) || null, monitoring_table_id: parseInt(form.monitoring_table_id) || null };
+        // plc_id and monitoring_table_id are not strictly bound to the report anymore since tags can be mixed. We can pass null.
+        const body = { ...form, plc_id: null, monitoring_table_id: null };
         if (editId) body.id = editId;
 
         const res = await fetch('/api/reports', {
@@ -66,31 +71,53 @@ export default function AdminReportsPage() {
         setReports(r => r.filter(rp => rp.id !== id));
     };
 
-    const handleEdit = (report) => {
+    const handleEdit = async (report) => {
         setEditId(report.id);
+        const tagIds = Array.isArray(report.tag_ids) ? report.tag_ids : JSON.parse(report.tag_ids || '[]');
         setForm({
             name: report.name,
             description: report.description || '',
-            plc_id: report.plc_id?.toString() || '',
-            monitoring_table_id: report.monitoring_table_id?.toString() || '',
-            tag_ids: Array.isArray(report.tag_ids) ? report.tag_ids : JSON.parse(report.tag_ids || '[]'),
+            tag_ids: tagIds,
         });
-        if (report.plc_id) loadTables(report.plc_id);
-        if (report.monitoring_table_id) loadTags(report.monitoring_table_id);
+
+        // Reset filters
+        setFilterPlc('');
+        setFilterTable('');
+        setTables([]);
+        setTags([]);
+
+        // Fetch full tag info for selected tags
+        if (tagIds.length > 0) {
+            const res = await fetch(`/api/tags?tag_ids=${tagIds.join(',')}`);
+            const data = await res.json();
+            setSelectedTagsFull(data.tags || []);
+        } else {
+            setSelectedTagsFull([]);
+        }
         setShowModal(true);
     };
 
     const resetForm = () => {
         setShowModal(false); setEditId(null);
-        setForm({ name: '', description: '', plc_id: '', monitoring_table_id: '', tag_ids: [] });
-        setTables([]); setTags([]);
+        setForm({ name: '', description: '', tag_ids: [] });
+        setFilterPlc('');
+        setFilterTable('');
+        setTables([]); setTags([]); setSelectedTagsFull([]);
     };
 
-    const toggleTag = (tagId) => {
+    const toggleTag = (tag) => {
+        const tagId = tag.id;
+        const exists = form.tag_ids.includes(tagId);
+
         setForm(f => ({
             ...f,
-            tag_ids: f.tag_ids.includes(tagId) ? f.tag_ids.filter(t => t !== tagId) : [...f.tag_ids, tagId]
+            tag_ids: exists ? f.tag_ids.filter(t => t !== tagId) : [...f.tag_ids, tagId]
         }));
+
+        setSelectedTagsFull(prev => {
+            if (exists) return prev.filter(t => t.id !== tagId);
+            return [...prev, tag];
+        });
     };
 
     if (loading) return <div className="page-loading"><div className="loading-spinner" /> Yükleniyor...</div>;
@@ -111,8 +138,8 @@ export default function AdminReportsPage() {
                         {reports.map(r => (
                             <tr key={r.id}>
                                 <td style={{ fontWeight: 600 }}>{r.name}</td>
-                                <td>{r.plc_name || '-'}</td>
-                                <td>{r.table_name || '-'}</td>
+                                <td>{r.plc_name || 'Karma PLC'}</td>
+                                <td>{r.table_name || 'Karma Tablo'}</td>
                                 <td><span className="badge badge-info">{Array.isArray(r.tag_ids) ? r.tag_ids.length : 0}</span></td>
                                 <td style={{ whiteSpace: 'nowrap' }}>{new Date(r.created_at).toLocaleDateString('tr-TR')}</td>
                                 <td>
@@ -148,9 +175,10 @@ export default function AdminReportsPage() {
                         </div>
                         <div className="form-row">
                             <div className="form-group">
-                                <label className="form-label">PLC Seçin</label>
-                                <select className="form-select" value={form.plc_id} onChange={e => {
-                                    setForm(f => ({ ...f, plc_id: e.target.value, monitoring_table_id: '', tag_ids: [] }));
+                                <label className="form-label">PLC Seçimi (Filtre)</label>
+                                <select className="form-select" value={filterPlc} onChange={e => {
+                                    setFilterPlc(e.target.value);
+                                    setFilterTable('');
                                     loadTables(e.target.value);
                                 }}>
                                     <option value="">-- PLC Seçin --</option>
@@ -158,9 +186,9 @@ export default function AdminReportsPage() {
                                 </select>
                             </div>
                             <div className="form-group">
-                                <label className="form-label">Tablo Seçin</label>
-                                <select className="form-select" value={form.monitoring_table_id} onChange={e => {
-                                    setForm(f => ({ ...f, monitoring_table_id: e.target.value, tag_ids: [] }));
+                                <label className="form-label">Tablo Seçimi (Filtre)</label>
+                                <select className="form-select" value={filterTable} onChange={e => {
+                                    setFilterTable(e.target.value);
                                     loadTags(e.target.value);
                                 }}>
                                     <option value="">-- Tablo Seçin --</option>
@@ -171,7 +199,7 @@ export default function AdminReportsPage() {
 
                         {tags.length > 0 && (
                             <div className="form-group">
-                                <label className="form-label">Tag Seçimi ({form.tag_ids.length} seçili)</label>
+                                <label className="form-label">Bu Tablodaki Taglar</label>
                                 <div style={{ maxHeight: 200, overflow: 'auto', border: '1px solid var(--border-primary)', borderRadius: 'var(--radius-sm)', padding: 8 }}>
                                     {tags.map(tag => (
                                         <label key={tag.id} style={{
@@ -179,10 +207,30 @@ export default function AdminReportsPage() {
                                             cursor: 'pointer', borderRadius: 4, fontSize: 13,
                                             background: form.tag_ids.includes(tag.id) ? 'rgba(59,130,246,0.1)' : 'transparent',
                                         }}>
-                                            <input type="checkbox" checked={form.tag_ids.includes(tag.id)} onChange={() => toggleTag(tag.id)} />
+                                            <input type="checkbox" checked={form.tag_ids.includes(tag.id)} onChange={() => toggleTag(tag)} />
                                             <span style={{ fontWeight: 500 }}>{tag.name}</span>
                                             <span style={{ fontSize: 11, color: 'var(--text-tertiary)' }}>({tag.unit || tag.data_type})</span>
                                         </label>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
+
+                        {selectedTagsFull.length > 0 && (
+                            <div className="form-group" style={{ marginTop: 16 }}>
+                                <label className="form-label">Seçilen Tüm Taglar ({selectedTagsFull.length})</label>
+                                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, maxHeight: 200, overflow: 'auto', padding: 4 }}>
+                                    {selectedTagsFull.map(tag => (
+                                        <div key={tag.id} title={`${tag.plc_name || ''} > ${tag.table_name || ''}`} style={{
+                                            background: 'var(--bg-secondary)', border: '1px solid var(--border-primary)',
+                                            padding: '4px 10px', borderRadius: 20, fontSize: 12, display: 'flex', alignItems: 'center', gap: 6
+                                        }}>
+                                            <div style={{ display: 'flex', flexDirection: 'column', paddingRight: 4 }}>
+                                                <span style={{ fontSize: 9, color: 'var(--text-tertiary)', lineHeight: 1.1 }}>{tag.plc_name || 'PLC'} - {tag.table_name || 'Tablo'}</span>
+                                                <span style={{ fontWeight: 600, color: 'var(--text-primary)' }}>{tag.name}</span>
+                                            </div>
+                                            <button type="button" onClick={() => toggleTag(tag)} style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: 16, color: 'var(--text-tertiary)', padding: '0 4px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>&times;</button>
+                                        </div>
                                     ))}
                                 </div>
                             </div>

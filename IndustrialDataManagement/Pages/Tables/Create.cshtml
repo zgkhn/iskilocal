@@ -24,9 +24,20 @@
             </div>
             <div class="row mb-4">
                 <div class="col-md-6">
-                    <label class="form-label">Okuma Süresi (Polling ms)</label>
-                    <input asp-for="Table.PollingIntervalMs" class="form-control" type="number" required value="1000" />
-                    <small class="text-muted">Bu tablodaki verilerin PLC'den kaç milisaniyede bir çekileceğini belirler.</small>
+                    <label class="form-label">Okuma Periyodu (Senkronize)</label>
+                    <select asp-for="Table.PollingIntervalMs" class="form-select" required>
+                        <option value="60000">1 Dakika</option>
+                        <option value="600000">10 Dakika</option>
+                        <option value="1800000">30 Dakika</option>
+                        <option value="3600000">1 Saat</option>
+                        <option value="7200000">2 Saat</option>
+                        <option value="14400000">4 Saat</option>
+                        <option value="28800000">8 Saat</option>
+                        <option value="43200000">12 Saat</option>
+                        <option value="57600000">16 Saat</option>
+                        <option value="86400000">24 Saat</option>
+                    </select>
+                    <small class="text-muted">Veriler seçilen periyodun tam basamaklarında (örn. 10:00:00) senkronize şekilde toplanacaktır.</small>
                 </div>
                 <div class="col-md-6 d-flex align-items-center mt-3">
                     <div class="form-check">

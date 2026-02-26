@@ -1,0 +1,847 @@
+2026-02-25 08:02:45.744 +03:00 [INF] [] Starting Windows Service Host
+2026-02-25 08:02:45.845 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Industrial Data Collector Service is starting.
+2026-02-25 08:02:45.847 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Ensuring database partitions exist...
+2026-02-25 08:03:01.022 +03:00 [ERR] [IndustrialDataCollector.Workers.TableSchedulerService] Critical error in TableSchedulerService main loop.
+Npgsql.NpgsqlException (0x80004005): Failed to connect to 190.133.168.179:5432
+ ---> System.TimeoutException: The operation has timed out.
+   at Npgsql.TaskTimeoutAndCancellation.ExecuteAsync(Func`2 getTaskFunc, NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.ConnectAsync(NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.ConnectAsync(NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|213_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|34_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at IndustrialDataCollector.Data.DataRepository.EnsurePartitionsExistAsync() in C:\Users\Gokhan\Desktop\İski\IndustrialDataCollector\Data\DataRepository.cs:line 107
+   at IndustrialDataCollector.Workers.TableSchedulerService.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\Gokhan\Desktop\İski\IndustrialDataCollector\Workers\TableSchedulerService.cs:line 43
+2026-02-25 08:03:31.046 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Ensuring database partitions exist...
+2026-02-25 08:03:46.059 +03:00 [ERR] [IndustrialDataCollector.Workers.TableSchedulerService] Critical error in TableSchedulerService main loop.
+Npgsql.NpgsqlException (0x80004005): Failed to connect to 190.133.168.179:5432
+ ---> System.TimeoutException: The operation has timed out.
+   at Npgsql.TaskTimeoutAndCancellation.ExecuteAsync(Func`2 getTaskFunc, NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.ConnectAsync(NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.ConnectAsync(NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|213_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|34_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at IndustrialDataCollector.Data.DataRepository.EnsurePartitionsExistAsync() in C:\Users\Gokhan\Desktop\İski\IndustrialDataCollector\Data\DataRepository.cs:line 107
+   at IndustrialDataCollector.Workers.TableSchedulerService.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\Gokhan\Desktop\İski\IndustrialDataCollector\Workers\TableSchedulerService.cs:line 43
+2026-02-25 08:04:16.075 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Ensuring database partitions exist...
+2026-02-25 08:04:31.090 +03:00 [ERR] [IndustrialDataCollector.Workers.TableSchedulerService] Critical error in TableSchedulerService main loop.
+Npgsql.NpgsqlException (0x80004005): Failed to connect to 190.133.168.179:5432
+ ---> System.TimeoutException: The operation has timed out.
+   at Npgsql.TaskTimeoutAndCancellation.ExecuteAsync(Func`2 getTaskFunc, NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.ConnectAsync(NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.ConnectAsync(NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|213_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|34_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at IndustrialDataCollector.Data.DataRepository.EnsurePartitionsExistAsync() in C:\Users\Gokhan\Desktop\İski\IndustrialDataCollector\Data\DataRepository.cs:line 107
+   at IndustrialDataCollector.Workers.TableSchedulerService.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\Gokhan\Desktop\İski\IndustrialDataCollector\Workers\TableSchedulerService.cs:line 43
+2026-02-25 08:05:01.109 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Ensuring database partitions exist...
+2026-02-25 08:05:01.205 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Loading configurations from database...
+2026-02-25 08:05:01.238 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Found 3 active tables. Initializing scheduler tasks...
+2026-02-25 08:05:01.265 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Started Scheduler for Table test (PLC: osmaniye) with Polling 20000ms
+2026-02-25 08:05:01.361 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Started Scheduler for Table Emirli Flitre A2 (PLC: Emirli 1 A2 Flitre) with Polling 10000ms
+2026-02-25 08:05:01.362 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Connected to Modbus PLC: osmaniye (190.133.168.140:502)
+2026-02-25 08:05:01.364 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:05:01.364 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Started Scheduler for Table orhaniye test  tablo (PLC: Orhaniye) with Polling 20000ms
+2026-02-25 08:05:01.366 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] All scheduler tasks are initialized. Watching for signals or stop.
+2026-02-25 08:05:01.367 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Connected to Modbus PLC: Orhaniye (190.133.168.107:502)
+2026-02-25 08:05:01.368 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:05:01.378 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Connected to Modbus PLC: Emirli 1 A2 Flitre (190.133.168.226:502)
+2026-02-25 08:05:01.379 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:05:01.388 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:05:01.393 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:05:01.401 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:05:01.406 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:05:01.421 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:05:01.423 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 60ms
+2026-02-25 08:05:01.428 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:05:01.439 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:05:01.453 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 87ms
+2026-02-25 08:05:01.460 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 192ms
+2026-02-25 08:05:11.372 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:05:11.382 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:05:11.400 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 28ms
+2026-02-25 08:05:21.281 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:05:21.302 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:05:21.320 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:05:21.339 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:05:21.361 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 79ms
+2026-02-25 08:05:21.383 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:05:21.383 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:05:21.391 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:05:21.395 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:05:21.403 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 20ms
+2026-02-25 08:05:21.415 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:05:21.439 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:05:21.465 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 81ms
+2026-02-25 08:05:31.391 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:05:31.411 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:05:31.428 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 36ms
+2026-02-25 08:05:41.295 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:05:41.301 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:05:41.319 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:05:41.337 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:05:41.365 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 70ms
+2026-02-25 08:05:41.390 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:05:41.391 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:05:41.401 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:05:41.405 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:05:41.415 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 23ms
+2026-02-25 08:05:41.426 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:05:41.446 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:05:41.471 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 80ms
+2026-02-25 08:05:51.395 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:05:51.402 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:05:51.427 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 32ms
+2026-02-25 08:06:01.309 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:06:01.316 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:06:01.336 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:06:01.355 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:06:01.385 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 76ms
+2026-02-25 08:06:01.403 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:06:01.403 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:06:01.412 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:06:01.422 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:06:01.427 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 23ms
+2026-02-25 08:06:01.442 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:06:01.463 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:06:01.493 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 89ms
+2026-02-25 08:06:11.417 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:06:11.422 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:06:11.442 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 25ms
+2026-02-25 08:06:21.315 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:06:21.326 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:06:21.345 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:06:21.364 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:06:21.392 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 76ms
+2026-02-25 08:06:21.409 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:06:21.412 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:06:21.424 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:06:21.431 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:06:21.432 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:06:21.448 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 23ms
+2026-02-25 08:06:21.453 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:06:21.477 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 68ms
+2026-02-25 08:06:31.431 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:06:31.442 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:06:31.463 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 31ms
+2026-02-25 08:06:41.324 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:06:41.346 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:06:41.365 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:06:41.384 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:06:41.412 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 88ms
+2026-02-25 08:06:41.417 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:06:41.433 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:06:41.435 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:06:41.442 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:06:41.455 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 22ms
+2026-02-25 08:06:41.456 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:06:41.476 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:06:41.501 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 83ms
+2026-02-25 08:06:51.436 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:06:51.442 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:06:51.457 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 20ms
+2026-02-25 08:07:01.333 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:07:01.338 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:07:01.358 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:07:01.376 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:07:01.397 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 64ms
+2026-02-25 08:07:01.426 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:07:01.442 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:07:01.449 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:07:01.452 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:07:01.469 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:07:01.491 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:07:01.494 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 51ms
+2026-02-25 08:07:01.516 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 89ms
+2026-02-25 08:07:11.453 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:07:11.463 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:07:11.483 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 29ms
+2026-02-25 08:07:21.343 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:07:21.358 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:07:21.374 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:07:21.393 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:07:21.428 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 85ms
+2026-02-25 08:07:21.429 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:07:21.443 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:07:21.463 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:07:21.468 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:07:21.474 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:07:21.482 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:07:21.489 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 20ms
+2026-02-25 08:07:21.505 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 75ms
+2026-02-25 08:07:31.470 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:07:31.484 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:07:31.498 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 27ms
+2026-02-25 08:07:41.344 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:07:41.354 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:07:41.372 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:07:41.391 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:07:41.420 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 76ms
+2026-02-25 08:07:41.437 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:07:41.454 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:07:41.474 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:07:41.483 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:07:41.493 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:07:41.494 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:07:41.508 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 25ms
+2026-02-25 08:07:41.517 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 80ms
+2026-02-25 08:07:51.485 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:07:51.494 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:07:51.509 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 23ms
+2026-02-25 08:08:01.345 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:08:01.368 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:08:01.388 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:08:01.405 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:08:01.428 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 82ms
+2026-02-25 08:08:01.438 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:08:01.453 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:08:01.474 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:08:01.494 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:08:01.500 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:08:01.515 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:08:01.518 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 80ms
+2026-02-25 08:08:01.525 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 25ms
+2026-02-25 08:08:11.505 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:08:11.514 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:08:11.528 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 22ms
+2026-02-25 08:08:21.346 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:08:21.367 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:08:21.387 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:08:21.406 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:08:21.428 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 82ms
+2026-02-25 08:08:21.453 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:08:21.457 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:08:21.478 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:08:21.498 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:08:21.516 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:08:21.523 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 69ms
+2026-02-25 08:08:21.524 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:08:21.537 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 21ms
+2026-02-25 08:08:33.626 +03:00 [INF] [] Starting Windows Service Host
+2026-02-25 08:08:33.718 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Industrial Data Collector Service is starting.
+2026-02-25 08:08:33.719 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Ensuring database partitions exist...
+2026-02-25 08:08:33.841 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Loading configurations from database...
+2026-02-25 08:08:33.871 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] Found 3 active tables. Initializing scheduler tasks...
+2026-02-25 08:08:33.895 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Started Scheduler for Table test (PLC: osmaniye) with Polling 20000ms
+2026-02-25 08:08:33.900 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Started Scheduler for Table Emirli Flitre A2 (PLC: Emirli 1 A2 Flitre) with Polling 10000ms
+2026-02-25 08:08:33.901 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Connected to Modbus PLC: osmaniye (190.133.168.140:502)
+2026-02-25 08:08:33.901 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:08:33.902 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Started Scheduler for Table orhaniye test  tablo (PLC: Orhaniye) with Polling 20000ms
+2026-02-25 08:08:33.902 +03:00 [INF] [IndustrialDataCollector.Workers.TableSchedulerService] All scheduler tasks are initialized. Watching for signals or stop.
+2026-02-25 08:08:33.902 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Connected to Modbus PLC: Emirli 1 A2 Flitre (190.133.168.226:502)
+2026-02-25 08:08:33.902 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Connected to Modbus PLC: Orhaniye (190.133.168.107:502)
+2026-02-25 08:08:33.903 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:08:33.903 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:08:33.919 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:08:33.920 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:08:33.931 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:08:33.940 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:08:33.947 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 46ms
+2026-02-25 08:08:33.950 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:08:33.961 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:08:33.968 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:08:33.983 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 81ms
+2026-02-25 08:08:33.996 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 100ms
+2026-02-25 08:08:43.905 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:08:43.914 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:08:43.937 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 31ms
+2026-02-25 08:08:53.904 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:08:53.904 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:08:53.908 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:08:53.914 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:08:53.915 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:08:53.923 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:08:53.934 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 25ms
+2026-02-25 08:08:53.934 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:08:53.944 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:08:53.952 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:08:53.965 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:08:53.976 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 71ms
+2026-02-25 08:08:53.988 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 83ms
+2026-02-25 08:09:03.914 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:09:03.924 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:09:03.944 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 29ms
+2026-02-25 08:09:13.909 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:09:13.909 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:09:13.922 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:09:13.923 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:09:13.924 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:09:13.937 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:09:13.941 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:09:13.943 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:09:13.951 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 26ms
+2026-02-25 08:09:13.961 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:09:13.964 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:09:13.983 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 73ms
+2026-02-25 08:09:13.987 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 78ms
+2026-02-25 08:09:23.928 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:09:23.935 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:09:23.949 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 21ms
+2026-02-25 08:09:33.925 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:09:33.925 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:09:33.935 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:09:33.940 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:09:33.944 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:09:33.946 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:09:33.956 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:09:33.962 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:09:33.970 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 30ms
+2026-02-25 08:09:33.978 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:09:33.980 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:09:34.001 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 76ms
+2026-02-25 08:09:34.013 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 87ms
+2026-02-25 08:09:43.942 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:09:43.946 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:09:43.978 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 36ms
+2026-02-25 08:09:53.935 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:09:53.935 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:09:53.943 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:09:53.950 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:09:53.956 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:09:53.958 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:09:53.960 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:09:53.976 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 26ms
+2026-02-25 08:09:53.977 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:09:53.979 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:09:53.998 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:09:54.000 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 65ms
+2026-02-25 08:09:54.023 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 88ms
+2026-02-25 08:10:03.957 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:10:03.967 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:10:03.986 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 28ms
+2026-02-25 08:10:13.949 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:10:13.949 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:10:13.955 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:10:13.965 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:10:13.968 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:10:13.976 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:10:13.978 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:10:13.989 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:10:13.993 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:10:14.009 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:10:14.022 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 73ms
+2026-02-25 08:10:14.031 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 65ms
+2026-02-25 08:10:14.032 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 83ms
+2026-02-25 08:10:23.979 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:10:23.986 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:10:24.001 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 22ms
+2026-02-25 08:10:33.951 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:10:33.951 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:10:33.966 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:10:33.972 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:10:33.981 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:10:33.985 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:10:33.986 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:10:33.993 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:10:34.003 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:10:34.008 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 26ms
+2026-02-25 08:10:34.014 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:10:34.026 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 75ms
+2026-02-25 08:10:34.072 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 120ms
+2026-02-25 08:10:43.992 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:10:43.997 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:10:44.014 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 22ms
+2026-02-25 08:10:53.956 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:10:53.956 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:10:53.964 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:10:53.964 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:10:53.983 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:10:53.985 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:10:54.001 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:10:54.002 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:10:54.005 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:10:54.008 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:10:54.022 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 20ms
+2026-02-25 08:10:54.023 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 67ms
+2026-02-25 08:10:54.036 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 79ms
+2026-02-25 08:11:04.008 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:11:04.017 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:11:04.039 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 31ms
+2026-02-25 08:11:13.965 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:11:13.966 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:11:13.978 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:11:13.978 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:11:13.996 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:11:13.999 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:11:14.012 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:11:14.014 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:11:14.017 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:11:14.019 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:11:14.037 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 24ms
+2026-02-25 08:11:14.037 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 71ms
+2026-02-25 08:11:14.043 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 77ms
+2026-02-25 08:11:24.021 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:11:24.029 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:11:24.042 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 20ms
+2026-02-25 08:11:33.974 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:11:33.974 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:11:33.990 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:11:33.992 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:11:34.011 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:11:34.012 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:11:34.030 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:11:34.032 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:11:34.036 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:11:34.047 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:11:34.058 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 84ms
+2026-02-25 08:11:34.059 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 85ms
+2026-02-25 08:11:34.088 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 51ms
+2026-02-25 08:11:44.038 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:11:44.049 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:11:44.070 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 31ms
+2026-02-25 08:11:53.979 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:11:53.979 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:11:53.991 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:11:53.993 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:11:54.012 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:11:54.013 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:11:54.032 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:11:54.034 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:11:54.042 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:11:54.050 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:11:54.059 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 80ms
+2026-02-25 08:11:54.060 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 80ms
+2026-02-25 08:11:54.061 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 19ms
+2026-02-25 08:12:04.054 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:12:04.059 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:12:04.078 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 23ms
+2026-02-25 08:12:13.979 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:12:13.979 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:12:13.988 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:12:14.002 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:12:14.009 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:12:14.025 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:12:14.028 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:12:14.045 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:12:14.055 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:12:14.056 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 77ms
+2026-02-25 08:12:14.068 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:12:14.070 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 91ms
+2026-02-25 08:12:14.081 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 25ms
+2026-02-25 08:12:24.059 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:12:24.072 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:12:24.082 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 23ms
+2026-02-25 08:12:33.993 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:12:33.994 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:12:33.999 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:12:34.011 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:12:34.020 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:12:34.035 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:12:34.039 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:12:34.056 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:12:34.060 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 66ms
+2026-02-25 08:12:34.070 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:12:34.084 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:12:34.091 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 98ms
+2026-02-25 08:12:34.095 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 24ms
+2026-02-25 08:12:44.072 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:12:44.078 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:12:44.102 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 29ms
+2026-02-25 08:12:54.002 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:12:54.002 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:12:54.012 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:12:54.022 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:12:54.032 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:12:54.043 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:12:54.052 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:12:54.062 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:12:54.077 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 74ms
+2026-02-25 08:12:54.080 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:12:54.085 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 82ms
+2026-02-25 08:12:54.090 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:12:54.113 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 32ms
+2026-02-25 08:13:04.082 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:13:04.090 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:13:04.110 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 28ms
+2026-02-25 08:13:14.012 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:13:14.012 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:13:14.015 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:13:14.022 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:13:14.035 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:13:14.042 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:13:14.055 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:13:14.062 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:13:14.083 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 70ms
+2026-02-25 08:13:14.083 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:13:14.084 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 72ms
+2026-02-25 08:13:14.088 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:13:14.102 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 18ms
+2026-02-25 08:13:24.085 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:13:24.090 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:13:24.116 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 31ms
+2026-02-25 08:13:34.026 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:13:34.026 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:13:34.034 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:13:34.047 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:13:34.054 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:13:34.068 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:13:34.074 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:13:34.088 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:13:34.088 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:13:34.101 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:13:34.103 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 77ms
+2026-02-25 08:13:34.112 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 24ms
+2026-02-25 08:13:34.125 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 99ms
+2026-02-25 08:13:44.099 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:13:44.111 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:13:44.130 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 31ms
+2026-02-25 08:13:54.041 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:13:54.041 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:13:54.047 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:13:54.049 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:13:54.067 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:13:54.070 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:13:54.088 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:13:54.091 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:13:54.102 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:13:54.110 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 69ms
+2026-02-25 08:13:54.111 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:13:54.111 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 70ms
+2026-02-25 08:13:54.128 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 25ms
+2026-02-25 08:14:04.116 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:14:04.119 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:14:04.133 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 16ms
+2026-02-25 08:14:14.047 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:14:14.047 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:14:14.053 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:14:14.066 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:14:14.073 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:14:14.087 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:14:14.094 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:14:14.107 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:14:14.123 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 75ms
+2026-02-25 08:14:14.123 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:14:14.130 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 83ms
+2026-02-25 08:14:14.130 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:14:14.143 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 20ms
+2026-02-25 08:14:24.134 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:14:24.140 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:14:24.159 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 25ms
+2026-02-25 08:14:34.061 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:14:34.061 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:14:34.075 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:14:34.081 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:14:34.093 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:14:34.102 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:14:34.112 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:14:34.123 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:14:34.137 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:14:34.143 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 82ms
+2026-02-25 08:14:34.148 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 86ms
+2026-02-25 08:14:34.150 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:14:34.165 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 27ms
+2026-02-25 08:14:44.152 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:14:44.161 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:14:44.195 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 43ms
+2026-02-25 08:14:54.064 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:14:54.064 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:14:54.069 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:14:54.073 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:14:54.090 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:14:54.092 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:14:54.111 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:14:54.113 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:14:54.141 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 76ms
+2026-02-25 08:14:54.141 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 76ms
+2026-02-25 08:14:54.157 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:14:54.160 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:14:54.176 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 19ms
+2026-02-25 08:15:04.163 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:15:04.173 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:15:04.192 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 29ms
+2026-02-25 08:15:14.068 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:15:14.068 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:15:14.076 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:15:14.089 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:15:14.098 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:15:14.108 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:15:14.118 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:15:14.128 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:15:14.149 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 80ms
+2026-02-25 08:15:14.151 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 82ms
+2026-02-25 08:15:14.177 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:15:14.182 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:15:14.198 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 20ms
+2026-02-25 08:15:24.177 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:15:24.183 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:15:24.203 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 26ms
+2026-02-25 08:15:34.076 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:15:34.076 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:15:34.090 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:15:34.094 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:15:34.108 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:15:34.115 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:15:34.127 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:15:34.136 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:15:34.149 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 73ms
+2026-02-25 08:15:34.161 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 85ms
+2026-02-25 08:15:34.185 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:15:34.194 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:15:34.204 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 18ms
+2026-02-25 08:15:44.195 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:15:44.202 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:15:44.217 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 22ms
+2026-02-25 08:15:54.079 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:15:54.079 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:15:54.086 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:15:54.088 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:15:54.104 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:15:54.108 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:15:54.124 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:15:54.128 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:15:54.151 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 72ms
+2026-02-25 08:15:54.152 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 73ms
+2026-02-25 08:15:54.203 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:15:54.213 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:15:54.227 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 23ms
+2026-02-25 08:16:04.207 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:16:04.212 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:16:04.258 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 50ms
+2026-02-25 08:16:14.088 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:16:14.088 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:16:14.093 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:16:14.104 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:16:14.111 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:16:14.125 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:16:14.130 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:16:14.145 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:16:14.160 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 71ms
+2026-02-25 08:16:14.170 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 81ms
+2026-02-25 08:16:14.212 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:16:14.235 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:16:14.258 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 45ms
+2026-02-25 08:16:24.224 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:16:24.234 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:16:24.252 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 28ms
+2026-02-25 08:16:34.092 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:16:34.092 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:16:34.101 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:16:34.107 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:16:34.119 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:16:34.128 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:16:34.138 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:16:34.149 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:16:34.167 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 75ms
+2026-02-25 08:16:34.173 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 81ms
+2026-02-25 08:16:34.232 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:16:34.244 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:16:34.258 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 25ms
+2026-02-25 08:16:44.238 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:16:44.242 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:16:44.256 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 18ms
+2026-02-25 08:16:54.097 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:16:54.097 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:16:54.108 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:16:54.119 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:16:54.129 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:16:54.137 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:16:54.150 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:16:54.155 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:16:54.181 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 83ms
+2026-02-25 08:16:54.182 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 84ms
+2026-02-25 08:16:54.253 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:16:54.263 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:16:54.280 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 27ms
+2026-02-25 08:17:04.253 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:17:04.263 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:17:04.283 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 30ms
+2026-02-25 08:17:14.103 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:17:14.103 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:17:14.119 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:17:14.121 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:17:14.139 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:17:14.139 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:17:14.158 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:17:14.161 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:17:14.182 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 79ms
+2026-02-25 08:17:14.185 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 82ms
+2026-02-25 08:17:14.258 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:17:14.283 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:17:14.299 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 40ms
+2026-02-25 08:17:24.266 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:17:24.273 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:17:24.289 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 23ms
+2026-02-25 08:17:34.108 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:17:34.108 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:17:34.116 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:17:34.123 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:17:34.138 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:17:34.143 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:17:34.161 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:17:34.161 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:17:34.189 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 81ms
+2026-02-25 08:17:34.190 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 81ms
+2026-02-25 08:17:34.277 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:17:34.285 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:17:34.302 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 25ms
+2026-02-25 08:17:44.290 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:17:44.296 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:17:44.309 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 19ms
+2026-02-25 08:17:54.115 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:17:54.115 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:17:54.126 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:17:54.131 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:17:54.146 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:17:54.149 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:17:54.167 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:17:54.167 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:17:54.195 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 80ms
+2026-02-25 08:17:54.197 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 82ms
+2026-02-25 08:17:54.301 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:17:54.314 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:17:54.328 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 27ms
+2026-02-25 08:18:04.304 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:18:04.314 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:18:04.334 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 30ms
+2026-02-25 08:18:14.125 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:18:14.125 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:18:14.136 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:18:14.146 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:18:14.155 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:18:14.167 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:18:14.174 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:18:14.187 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:18:14.201 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 76ms
+2026-02-25 08:18:14.212 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 86ms
+2026-02-25 08:18:14.311 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:18:14.314 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:18:14.327 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 16ms
+2026-02-25 08:18:24.311 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:18:24.315 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:18:24.337 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 26ms
+2026-02-25 08:18:34.135 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:18:34.135 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:18:34.143 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:18:34.151 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:18:34.162 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:18:34.171 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:18:34.181 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:18:34.191 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:18:34.212 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 76ms
+2026-02-25 08:18:34.215 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 80ms
+2026-02-25 08:18:34.320 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:18:34.327 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:18:34.354 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 34ms
+2026-02-25 08:18:44.319 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:18:44.324 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:18:44.337 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 17ms
+2026-02-25 08:18:54.145 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:18:54.145 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:18:54.151 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:18:54.162 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:18:54.172 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:18:54.181 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:18:54.194 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:18:54.200 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:18:54.222 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 76ms
+2026-02-25 08:18:54.233 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 87ms
+2026-02-25 08:18:54.330 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:18:54.335 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:18:54.350 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 20ms
+2026-02-25 08:19:04.343 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:19:04.355 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:19:04.370 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 26ms
+2026-02-25 08:19:14.146 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:19:14.147 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:19:14.155 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:19:14.163 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:19:14.176 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:19:14.180 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:19:14.196 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:19:14.199 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:19:14.227 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 80ms
+2026-02-25 08:19:14.228 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 81ms
+2026-02-25 08:19:14.350 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:19:14.356 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:19:14.370 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 20ms
+2026-02-25 08:19:24.354 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:19:24.367 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:19:24.390 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 35ms
+2026-02-25 08:19:34.158 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:19:34.158 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:19:34.178 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:19:34.180 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:19:34.197 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:19:34.202 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:19:34.215 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:19:34.222 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:19:34.254 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 95ms
+2026-02-25 08:19:34.256 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 97ms
+2026-02-25 08:19:34.361 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:19:34.367 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:19:34.381 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 19ms
+2026-02-25 08:19:44.369 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:19:44.378 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:19:44.396 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 26ms
+2026-02-25 08:19:54.162 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:19:54.162 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:19:54.171 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:19:54.180 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:19:54.192 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:19:54.198 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:19:54.214 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:19:54.216 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:19:54.243 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 81ms
+2026-02-25 08:19:54.244 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 82ms
+2026-02-25 08:19:54.381 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:19:54.398 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:19:54.442 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 60ms
+2026-02-25 08:20:04.383 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:20:04.398 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:20:04.415 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 31ms
+2026-02-25 08:20:14.177 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:20:14.177 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:20:14.183 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:20:14.185 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:20:14.202 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:20:14.206 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:20:14.221 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:20:14.228 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:20:14.243 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 65ms
+2026-02-25 08:20:14.253 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 75ms
+2026-02-25 08:20:14.394 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:20:14.408 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:20:14.444 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 49ms
+2026-02-25 08:20:24.397 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:20:24.407 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:20:24.429 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 32ms
+2026-02-25 08:20:34.192 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:20:34.192 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:20:34.203 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:20:34.211 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:20:34.223 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:20:34.229 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:20:34.247 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:20:34.248 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:20:34.269 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 76ms
+2026-02-25 08:20:34.270 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 77ms
+2026-02-25 08:20:34.412 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:20:34.418 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:20:34.432 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 20ms
+2026-02-25 08:20:44.422 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:20:44.427 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:20:44.444 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 21ms
+2026-02-25 08:20:54.203 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 2, Region HoldingRegisters, Type int
+2026-02-25 08:20:54.203 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 1168, Region HoldingRegisters, Type int
+2026-02-25 08:20:54.217 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 469, Region HoldingRegisters, Type int
+2026-02-25 08:20:54.222 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-25 08:20:54.236 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 461, Region HoldingRegisters, Type int
+2026-02-25 08:20:54.243 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8585, Region DiscreteInputs, Type bool
+2026-02-25 08:20:54.255 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 473, Region HoldingRegisters, Type int
+2026-02-25 08:20:54.263 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 8209, Region Coils, Type bool
+2026-02-25 08:20:54.277 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table test [osmaniye]: Inserted 4 tags successfully in 74ms
+2026-02-25 08:20:54.286 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table orhaniye test  tablo [Orhaniye]: Inserted 4 tags successfully in 83ms
+2026-02-25 08:20:54.438 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 300, Region HoldingRegisters, Type int
+2026-02-25 08:20:54.446 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 103, Region HoldingRegisters, Type int
+2026-02-25 08:20:54.467 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table Emirli Flitre A2 [Emirli 1 A2 Flitre]: Inserted 2 tags successfully in 28ms

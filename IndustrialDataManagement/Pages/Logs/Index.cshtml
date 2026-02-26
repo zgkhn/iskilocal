@@ -19,8 +19,27 @@
             <button class="btn btn-primary border-0 fw-bold px-4 shadow-sm" onclick="location.reload();">
                 <i class="bi bi-arrow-clockwise me-1"></i> Sayfayı Yenile
             </button>
+            <button type="button" class="btn btn-danger border-0 fw-bold px-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#clearLogsModal">
+                <i class="bi bi-trash-fill me-1"></i> Logları Temizle
+            </button>
         </div>
     </div>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="bi bi-check-circle-fill me-2"></i> @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <i class="bi bi-exclamation-triangle-fill me-2"></i> @TempData["ErrorMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
 
     <!-- Filtreleme Paneli -->
     <div class="card shadow-sm border-0 rounded-3 mb-4 bg-light">
@@ -188,6 +207,37 @@
                 </nav>
             </div>
         }
+    </div>
+</div>
+
+<!-- Log Temizleme Modalı -->
+<div class="modal fade" id="clearLogsModal" tabindex="-1" aria-labelledby="clearLogsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg">
+            <div class="modal-header bg-danger text-white border-0">
+                <h5 class="modal-title fw-bold" id="clearLogsModalLabel">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i> Tüm Loglar Silinecek
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form method="post" asp-page-handler="ClearLogs">
+                <div class="modal-body p-4">
+                    <p class="text-secondary fw-medium mb-4">
+                        Bu işlem geri alınamaz. Devam etmek için lütfen yönetici şifresini giriniz.
+                    </p>
+                    <div class="form-floating mb-3">
+                        <input type="password" name="password" class="form-control border-2" id="adminPassword" placeholder="Şifre" required>
+                        <label for="adminPassword" class="text-secondary">Yönetici Şifresi</label>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 p-4 pt-0">
+                    <button type="button" class="btn btn-light fw-bold px-4" data-bs-dismiss="modal">İptal</button>
+                    <button type="submit" class="btn btn-danger fw-bold px-4 shadow-sm">
+                        <i class="bi bi-trash-fill me-1"></i> Verileri Sil
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 

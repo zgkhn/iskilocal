@@ -19,9 +19,8 @@ public class PlcDriverFactory
     {
         return plcConfig.Protocol.ToLower() switch
         {
-            "modbustcp" => new ModbusTcpDriver(plcConfig, _serviceProvider.GetRequiredService<ILogger<ModbusTcpDriver>>()),
+            "modbustcp" or "ge-srtp" or "modbus" => new ModbusTcpDriver(plcConfig, _serviceProvider.GetRequiredService<ILogger<ModbusTcpDriver>>()),
             // "opcua" => new OpcUaDriver(...) // İleride eklenebilir
-            // "s7" => new S7Driver(...)
             _ => throw new NotSupportedException($"Protocol {plcConfig.Protocol} is not supported.")
         };
     }

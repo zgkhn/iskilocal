@@ -87,7 +87,7 @@ export async function PUT(request) {
 
         const result = await query(
             `UPDATE rc_report_pages SET name = COALESCE($2, name), description = COALESCE($3, description),
-       plc_id = COALESCE($4, plc_id), monitoring_table_id = COALESCE($5, monitoring_table_id),
+       plc_id = $4, monitoring_table_id = $5,
        tag_ids = COALESCE($6, tag_ids), config = COALESCE($7, config), updated_at = NOW()
        WHERE id = $1 AND is_deleted = FALSE RETURNING *`,
             [id, name, description, plc_id, monitoring_table_id, tag_ids ? JSON.stringify(tag_ids) : null, config ? JSON.stringify(config) : null]

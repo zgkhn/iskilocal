@@ -12,6 +12,7 @@
         <form method="post">
             <input type="hidden" asp-for="Tag.Id" />
             <input type="hidden" asp-for="Tag.MonitoringTableId" />
+            <input type="hidden" id="PlcId" value="@Model.PlcId" />
             
             <div class="row mb-3">
                 <div class="col-md-6">
@@ -26,10 +27,13 @@
             <div class="row mb-3">
                 <div class="col-md-4">
                     <label class="form-label">Veri Tipi</label>
-                    <select asp-for="Tag.DataType" class="form-select">
-                        <option value="float">Float (32-bit)</option>
-                        <option value="int">Integer (16/32-bit)</option>
-                        <option value="bool">Boolean (Bit)</option>
+                    <select asp-for="Tag.DataType" class="form-select" id="DataType">
+                        <option value="float">Float / REAL (32-bit)</option>
+                        <option value="int">Integer / INT (16-bit)</option>
+                        <option value="dint">DInt / INT32 (32-bit)</option>
+                        <option value="uint">UInt / UINT16 (16-bit)</option>
+                        <option value="udint">UDInt / UINT32 (32-bit)</option>
+                        <option value="bool">Boolean / BOOL (Bit)</option>
                     </select>
                 </div>
                 <div class="col-md-4">
@@ -49,10 +53,63 @@
                     </div>
                 </div>
             </div>
+            <div class="row mb-3" id="testResultArea" style="display:none;">
+                <div class="col-md-12">
+                    <div class="alert alert-info d-flex justify-content-between align-items-center mb-0">
+                        <span id="testResultText">PLC Değeri: --</span>
+                        <span id="testTime" class="small text-muted"></span>
+                    </div>
+                </div>
+            </div>
+
             <div class="d-flex justify-content-between">
-                <a asp-page="./Index" asp-route-tableId="@Model.Tag.MonitoringTableId" class="btn btn-secondary">Geri Dön</a>
+                <div>
+                    <a asp-page="./Index" asp-route-tableId="@Model.Tag.MonitoringTableId" class="btn btn-secondary">Geri Dön</a>
+                    <button type="button" id="btnTest" class="btn btn-info ms-2">Değer Test Et</button>
+                </div>
                 <button type="submit" class="btn btn-success">Güncelle</button>
             </div>
         </form>
     </div>
 </div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            $("#btnTest").click(function() {
+                var plcId = $("#PlcId").val();
+                var address = $("input[name='Tag.PlcAddress']").val();
+                var dataType = $("#DataType").val();
+
+                if(!address) {
+                    alert("Lütfen önce bir PLC adresi giriniz.");
+                    return;
+                }
+
+                $("#btnTest").prop("disabled", true).text("Test Ediliyor...");
+                $("#testResultArea").show();
+                $("#testResultText").text("PLC'den okunuyor...");
+                
+                $.ajax({
+                    type: "POST",
+                    url: "/Tags/Index?handler=TestTagValue",
+                    data: { plcId: plcId, address: address, dataType: dataType },
+                    headers: { "RequestVerificationToken": $('input[name="__RequestVerificationToken"]').val() },
+                    success: function (res) {
+                        $("#btnTest").prop("disabled", false).text("Değer Test Et");
+                        if (res.success) {
+                            $("#testResultText").html("<strong>Okunan Değer:</strong> " + res.value);
+                            $("#testTime").text(new Date().toLocaleTimeString());
+                        } else {
+                            $("#testResultText").text("Hata: " + res.message);
+                        }
+                    },
+                    error: function () {
+                        $("#btnTest").prop("disabled", false).text("Değer Test Et");
+                        $("#testResultText").text("Sunucu hatası veya bağlantı problemi.");
+                    }
+                });
+            });
+        });
+    </script>
+}

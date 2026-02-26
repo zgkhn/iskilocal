@@ -18,6 +18,8 @@ export default function ReportViewPage() {
     const [loading, setLoading] = useState(true);
     const [chartVisible, setChartVisible] = useState(false);
     const [isFullScreen, setIsFullScreen] = useState(false);
+    const [tooltip, setTooltip] = useState({ visible: false, content: '', x: 0, y: 0, tagName: '' });
+    const tooltipTimer = useRef(null);
 
     // Default Settings
     const defaultSettings = {
@@ -197,13 +199,34 @@ export default function ReportViewPage() {
         else { setSortBy(col); setSortOrder('DESC'); }
     };
 
+    // Tooltip Handlers
+    const handleMouseEnter = (e, tagName) => {
+        const desc = tagDescriptions[tagName];
+        if (!desc) return;
+
+        const rect = e.currentTarget.getBoundingClientRect();
+        const x = rect.left + window.scrollX;
+        const y = rect.bottom + window.scrollY + 5;
+
+        tooltipTimer.current = setTimeout(() => {
+            setTooltip({ visible: true, content: desc, x, y, tagName });
+        }, 2000);
+    };
+
+    const handleMouseLeave = () => {
+        if (tooltipTimer.current) clearTimeout(tooltipTimer.current);
+        setTooltip(prev => ({ ...prev, visible: false }));
+    };
+
     // Pivot Data Logic
-    const { pivotRows, allTagNames } = useMemo(() => {
+    const { pivotRows, allTagNames, tagDescriptions } = useMemo(() => {
         const rowMap = {};
         const nameSet = new Set();
+        const descMap = {};
 
         measurements.forEach(m => {
             nameSet.add(m.tag_name);
+            if (m.description) descMap[m.tag_name] = m.description;
             const ts = new Date(m.timestamp).toLocaleString('tr-TR');
             if (!rowMap[ts]) {
                 rowMap[ts] = { timestamp: ts, rawTimestamp: new Date(m.timestamp) };
@@ -220,7 +243,7 @@ export default function ReportViewPage() {
             return b.rawTimestamp - a.rawTimestamp;
         });
 
-        return { pivotRows: rows, allTagNames: [...nameSet] };
+        return { pivotRows: rows, allTagNames: [...nameSet], tagDescriptions: descMap };
     }, [measurements, sortOrder]);
 
     const handleToggleTag = (name) => {
@@ -680,7 +703,10 @@ export default function ReportViewPage() {
                                         Tarih/Saat {sortBy === 'timestamp' ? (sortOrder === 'ASC' ? '↑' : '↓') : ''}
                                     </th>
                                     {orderedTagNames.map(name => (
-                                        <th key={name} style={{ textAlign: 'right', whiteSpace: 'nowrap', padding: `${tableSettings.rowPad}px ${tableSettings.colPad}px`, fontSize: tableSettings.headerFontSize }}>
+                                        <th key={name}
+                                            onMouseEnter={(e) => handleMouseEnter(e, name)}
+                                            onMouseLeave={handleMouseLeave}
+                                            style={{ textAlign: 'right', whiteSpace: 'nowrap', padding: `${tableSettings.rowPad}px ${tableSettings.colPad}px`, fontSize: tableSettings.headerFontSize, cursor: tagDescriptions[name] ? 'help' : 'default' }}>
                                             {name}
                                         </th>
                                     ))}
@@ -724,7 +750,15 @@ export default function ReportViewPage() {
                                                 }
                                             }
 
-                                            return <td key={name} style={cellStyle}>{formattedVal}</td>;
+                                            return (
+                                                <td key={name}
+                                                    style={cellStyle}
+                                                    onMouseEnter={(e) => handleMouseEnter(e, name)}
+                                                    onMouseLeave={handleMouseLeave}
+                                                >
+                                                    {formattedVal}
+                                                </td>
+                                            );
                                         })}
                                     </tr>
                                 ))}
@@ -754,6 +788,28 @@ export default function ReportViewPage() {
                     )}
                 </>
             )}
+
+            {/* Tag Tooltip */}
+            {tooltip.visible && (
+                <div style={{
+                    position: 'absolute',
+                    top: tooltip.y,
+                    left: tooltip.x,
+                    background: 'var(--bg-card)',
+                    border: '1px solid var(--primary-500)',
+                    padding: '8px 12px',
+                    borderRadius: 'var(--radius-md)',
+                    boxShadow: 'var(--shadow-lg)',
+                    zIndex: 10002,
+                    maxWidth: 300,
+                    pointerEvents: 'none',
+                    animation: 'fadeIn 0.2s ease-in-out'
+                }}>
+                    <div style={{ fontSize: 11, fontWeight: 700, color: 'var(--primary-500)', marginBottom: 2 }}>{tooltip.tagName}</div>
+                    <div style={{ fontSize: 13, color: 'var(--text-primary)', lineHeight: 1.4 }}>{tooltip.content}</div>
+                </div>
+            )}
+
             {/* Success Popup */}
             {showSuccessPopup && (
                 <div style={{
@@ -771,6 +827,10 @@ export default function ReportViewPage() {
                 @keyframes slideInDown {
                     from { transform: translate(-50%, -100%); opacity: 0; }
                     to { transform: translate(-50%, 0); opacity: 1; }
+                }
+                @keyframes fadeIn {
+                    from { opacity: 0; transform: translateY(-5px); }
+                    to { opacity: 1; transform: translateY(0); }
                 }
             `}</style>
         </div>

@@ -6,7 +6,19 @@
 
 <div class="d-flex justify-content-between align-items-center mb-3">
     <h2>Son Alınan Ölçümler (Veri Akışı)</h2>
-    <button class="btn btn-outline-primary" onclick="location.reload();">Sayfayı Yenile</button>
+    <div class="d-flex gap-2">
+        <form method="get" class="d-flex gap-2 align-items-center me-3">
+            <select asp-for="TagId" class="form-select" asp-items="@(new SelectList(Model.Tags, "Id", "Name"))">
+                <option value="">Tüm Tag'leri İzle</option>
+            </select>
+            <button type="submit" class="btn btn-dark">Filtrele</button>
+            @if (Model.TagId.HasValue)
+            {
+                <a asp-page="./Index" class="btn btn-outline-secondary">X</a>
+            }
+        </form>
+        <button class="btn btn-outline-primary" onclick="location.reload();">Sayfayı Yenile</button>
+    </div>
 </div>
 
 <div class="alert alert-secondary">

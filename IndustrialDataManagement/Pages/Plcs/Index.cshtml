@@ -19,6 +19,8 @@
             <th>IP Adresi</th>
             <th>Port</th>
             <th>Protokol</th>
+            <th>Marka</th>
+            <th>Ofset</th>
             <th>Durum</th>
             <th class="text-center">İşlemler</th>
         </tr>
@@ -32,6 +34,10 @@
                 <td>@item.IpAddress</td>
                 <td>@item.Port</td>
                 <td>@item.Protocol</td>
+                <td>
+                    <span class="badge bg-secondary">@item.Manufacturer</span>
+                </td>
+                <td>@item.AddressOffset</td>
                 <td>
                     @if (item.IsActive)
                     {

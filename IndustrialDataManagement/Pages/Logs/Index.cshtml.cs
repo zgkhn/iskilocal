@@ -46,4 +46,19 @@ public class IndexModel : PageModel
         
         Logs = await _db.GetRecentLogsAsync(CurrentPage, PageSize, Level, PlcId, StartDate, EndDate);
     }
+
+    public async Task<IActionResult> OnPostClearLogsAsync(string password)
+    {
+        // Önemli: Gerçek bir sistemde şifre hash'lenmiş olmalı. 
+        // Burada basitlik için doğrudan kontrol ediyoruz.
+        if (password == "123456")
+        {
+            await _db.ClearAllLogsAsync();
+            TempData["SuccessMessage"] = "Tüm sistem logları başarıyla silindi.";
+            return RedirectToPage();
+        }
+
+        TempData["ErrorMessage"] = "Hatalı şifre! Loglar silinmedi.";
+        return RedirectToPage();
+    }
 }

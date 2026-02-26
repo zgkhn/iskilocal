@@ -96,7 +96,7 @@ else
                 var myToast = document.getElementById('testToast');
                 var bsToast = bootstrap.Toast.getInstance(myToast) || new bootstrap.Toast(myToast);
                 $("#toastTitle").text("Tag ID: " + tagId);
-                $("#toastMessage").text("Modbus TCP üzerinden canlı değer okunuyor... Lütfen bekleyin.");
+                $("#toastMessage").text("PLC üzerinden canlı değer okunuyor... Lütfen bekleyin.");
                 $("#testToast").removeClass("bg-success bg-danger text-white");
                 bsToast.show();
 

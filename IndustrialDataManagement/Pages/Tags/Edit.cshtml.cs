@@ -16,6 +16,7 @@ public class EditModel : PageModel
 
     [BindProperty]
     public Tag Tag { get; set; } = new Tag();
+    public int PlcId { get; set; }
 
     public async Task<IActionResult> OnGetAsync(int id)
     {
@@ -23,6 +24,8 @@ public class EditModel : PageModel
         if (tag == null) return NotFound();
 
         Tag = tag;
+        var table = await _db.GetTableByIdAsync(tag.MonitoringTableId);
+        if (table != null) PlcId = table.PlcId;
         return Page();
     }
 

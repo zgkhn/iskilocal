@@ -1,6 +1,6 @@
 const { Pool } = require('pg');
 const pool = new Pool({
-    host: 'localhost',
+    host: '190.133.168.179',
     port: 5432,
     database: 'iski_db',
     user: 'postgres',

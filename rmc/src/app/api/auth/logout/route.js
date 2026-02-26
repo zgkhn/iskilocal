@@ -13,11 +13,7 @@ export async function POST(request) {
         const response = NextResponse.json({ success: true });
         const cookie = clearAuthCookie();
         response.cookies.set(cookie.name, cookie.value, {
-            httpOnly: cookie.httpOnly,
-            secure: cookie.secure,
-            sameSite: cookie.sameSite,
-            path: cookie.path,
-            maxAge: cookie.maxAge,
+            ...cookie
         });
 
         return response;

@@ -1,11 +1,13 @@
-﻿<!DOCTYPE html>
+﻿@using IndustrialDataManagement.Data
+@inject AppDbContext db
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - İSKİ Ömerli Veri Yönetimi</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap-icons/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/IndustrialDataManagement.styles.css" asp-append-version="true" />
 </head>
@@ -41,6 +43,21 @@
                             <a class="nav-link text-white bg-danger rounded px-2" asp-area="" asp-page="/Logs/Index">Sistem Logları</a>
                         </li>
                     </ul>
+
+                    <div class="d-flex align-items-center me-3">
+                        @{
+                            var hasPending = await db.HasPendingChangesAsync();
+                        }
+                        @if (hasPending)
+                        {
+                            <form method="post" asp-page="/Index" asp-page-handler="ReloadCollector" class="d-inline" onsubmit="return confirm('Sistem konfigürasyonu yeniden yüklenecek. Emin misiniz?');">
+                                <button type="submit" class="btn btn-warning btn-sm fw-bold shadow-sm blink-status">
+                                    <i class="bi bi-cpu-fill me-1"></i> Değişiklikleri Uygula
+                                </button>
+                            </form>
+                        }
+                    </div>
+                    
                     
                     @if (User.Identity?.IsAuthenticated == true)
                     {
@@ -69,6 +86,22 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
+            @if (TempData["Message"] != null)
+            {
+                <div class="alert alert-success alert-dismissible fade show shadow-sm border-0 mb-4" role="alert">
+                    <i class="bi bi-check-circle-fill me-2"></i>
+                    @TempData["Message"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+            @if (TempData["Error"] != null)
+            {
+                <div class="alert alert-danger alert-dismissible fade show shadow-sm border-0 mb-4" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                    @TempData["Error"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
             @RenderBody()
         </main>
     </div>
@@ -79,8 +112,8 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     @await RenderSectionAsync("Scripts", required: false)

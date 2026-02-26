@@ -1,5 +1,6 @@
 using IndustrialDataManagement.Data;
 using IndustrialDataManagement.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace IndustrialDataManagement.Pages;
@@ -22,5 +23,12 @@ public class IndexModel : PageModel
         Plcs = await _db.GetDashboardPlcsAsync();
         Stats = await _db.GetDashboardStatsAsync();
         RecentLogs = await _db.GetRecentLogsAsync(1, 5);
+    }
+
+    public async Task<IActionResult> OnPostReloadCollector()
+    {
+        await _db.RequestCollectorReloadAsync();
+        TempData["Message"] = "Kolektör yenileme sinyali gönderildi.";
+        return RedirectToPage();
     }
 }

@@ -37,15 +37,16 @@ public class MonitoringTableTask
         _logger.LogInformation("Started Scheduler for Table {TableName} (PLC: {PlcName}) with Polling {Interval}ms",
             _table.Name, _table.Plc.Name, _table.PollingIntervalMs);
 
-        var stopwatch = new Stopwatch();
-
         while (!cancellationToken.IsCancellationRequested)
         {
-            stopwatch.Restart();
-            
             try
             {
-                var commonTimestamp = DateTime.UtcNow;
+                // Hizalı zamanı hesapla (Timestamp rounding)
+                var now = DateTime.UtcNow;
+                var intervalTicks = _table.PollingIntervalMs * TimeSpan.TicksPerMillisecond;
+                var roundedTicks = (now.Ticks / intervalTicks) * intervalTicks;
+                var commonTimestamp = new DateTime(roundedTicks, DateTimeKind.Utc);
+
                 var values = await _driver.ReadTagsAsync(_tags);
 
                 if (values != null && values.Count > 0)
@@ -58,17 +59,16 @@ public class MonitoringTableTask
                     });
 
                     await _repository.InsertMeasurementsBatchAsync(measurements, cancellationToken);
-                    _logger.LogInformation("Table {TableName} [{PlcName}]: Inserted {Count} tags successfully in {Elapsed}ms",
-                        _table.Name, _table.Plc.Name, values.Count, stopwatch.ElapsedMilliseconds);
+                    _logger.LogInformation("Table {TableName} [{PlcName}]: Inserted {Count} tags for {Timestamp}",
+                        _table.Name, _table.Plc.Name, values.Count, commonTimestamp.ToString("yyyy-MM-dd HH:mm:ss"));
 
-                    // Eksik tagleri tespit et ve logla (Eğer hepsi okunmadıysa)
                     if (values.Count < _tags.Count())
                     {
                         foreach (var tag in _tags)
                         {
                             if (!values.ContainsKey(tag.Id))
                             {
-                                var tagMsg = $"{_table.Plc.Name} cihazındaki '{tag.Name}' ({tag.PlcAddress}) tagi okunamadı. Lütfen adresin doğruluğunu ve cihaz konfigürasyonunu kontrol edin.";
+                                var tagMsg = $"{_table.Plc.Name} cihazındaki '{tag.Name}' ({tag.PlcAddress}) tagi okunamadı.";
                                 _logger.LogWarning("Table {TableName} [{PlcName}]: {Message}", _table.Name, _table.Plc.Name, tagMsg);
                                 await _repository.InsertSystemLogAsync(new SystemLog
                                 {
@@ -82,7 +82,7 @@ public class MonitoringTableTask
                 }
                 else
                 {
-                    var msg = $"{_table.Plc.Name} cihazından veri gelmedi. PLC'nin çalışır durumda olduğunu ve Tag adreslerinin ({_table.Name}) doğruluğunu kontrol edin.";
+                    var msg = $"{_table.Plc.Name} cihazından veri gelmedi. PLC bağlantısını kontrol edin.";
                     _logger.LogWarning("Table {TableName} [{PlcName}]: {Message}", _table.Name, _table.Plc.Name, msg);
                     await _repository.InsertSystemLogAsync(new SystemLog
                     {
@@ -94,19 +94,16 @@ public class MonitoringTableTask
             }
             catch (Exception ex)
             {
-                var userFriendlyMsg = $"{_table.Plc.Name} ({_table.Plc.IpAddress}) ile iletişim kurulamıyor veya bir hata oluştu. Lütfen ağ bağlantısını ve cihazın açık olduğunu kontrol edin.";
+                var userFriendlyMsg = $"{_table.Plc.Name} iletişim hatası: {ex.Message}";
                 _logger.LogError(ex, "Table {TableName} [{PlcName}]: {Message}", _table.Name, _table.Plc.Name, userFriendlyMsg);
-                await _repository.InsertSystemLogAsync(new SystemLog
-                {
-                    Level = "ERROR",
-                    Message = userFriendlyMsg,
-                    Exception = ex.Message, // Teknik detay exception alanında kalsın
-                    PlcId = _table.PlcId
-                });
             }
 
-            var delayTime = _table.PollingIntervalMs - (int)stopwatch.ElapsedMilliseconds;
-            if (delayTime > 0)
+            // Bir sonraki tam periyoda kadar bekle (Clock-Aligned Delay)
+            var nextTickTicks = ((DateTime.UtcNow.Ticks / (_table.PollingIntervalMs * TimeSpan.TicksPerMillisecond)) + 1) 
+                                * (_table.PollingIntervalMs * TimeSpan.TicksPerMillisecond);
+            var delayTime = new DateTime(nextTickTicks, DateTimeKind.Utc) - DateTime.UtcNow;
+
+            if (delayTime.TotalMilliseconds > 0)
             {
                 await Task.Delay(delayTime, cancellationToken);
             }
