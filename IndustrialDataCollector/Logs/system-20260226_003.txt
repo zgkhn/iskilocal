@@ -3674,3 +3674,14 @@ System.Threading.Tasks.TaskCanceledException: A task was canceled.
 2026-02-26 10:18:00.082 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table osmaniye [Orhaniye 1 1234]: Inserted 4 tags for 2026-02-26 07:18:00
 2026-02-26 10:18:00.084 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 154, Region HoldingRegisters, Type dint
 2026-02-26 10:18:00.106 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table emirli 62 [emirli filtre masterrrr]: Inserted 5 tags for 2026-02-26 07:18:00
+2026-02-26 10:19:00.004 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 3102, Region HoldingRegisters, Type float
+2026-02-26 10:19:00.004 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 91, Region HoldingRegisters, Type int
+2026-02-26 10:19:00.021 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 0, Region DiscreteInputs, Type bool
+2026-02-26 10:19:00.041 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 94, Region HoldingRegisters, Type float
+2026-02-26 10:19:00.047 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 3050, Region HoldingRegisters, Type float
+2026-02-26 10:19:00.060 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 9104, Region HoldingRegisters, Type dint
+2026-02-26 10:19:00.071 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 200, Region HoldingRegisters, Type bool
+2026-02-26 10:19:00.092 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 3261, Region HoldingRegisters, Type int
+2026-02-26 10:19:00.095 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table osmaniye [Orhaniye 1 1234]: Inserted 4 tags for 2026-02-26 07:19:00
+2026-02-26 10:19:00.110 +03:00 [INF] [IndustrialDataCollector.Drivers.ModbusTcpDriver] Reading Modbus: Slave 1, Register 154, Region HoldingRegisters, Type dint
+2026-02-26 10:19:00.162 +03:00 [INF] [IndustrialDataCollector.Workers.MonitoringTableTask] Table emirli 62 [emirli filtre masterrrr]: Inserted 5 tags for 2026-02-26 07:19:00
